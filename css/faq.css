@@ -1,0 +1,210 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #27ae60;
+    --accent-color: #e67e22;
+    --text-color: #2c3e50;
+    --light-bg: #f8f9fa;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.8;
+    padding: 20px;
+    padding-top: 100px; /* مسافة للنافبار الثابت */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* تنسيقات النافبار */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    transition: filter 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #c9b67a !important;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.search-container {
+    margin: 20px 0 30px;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: var(--transition);
+}
+
+.search-container input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.faq-category {
+    margin: 30px 0;
+}
+
+.faq-category h2 {
+    color: var(--secondary-color);
+    margin: 25px 0 15px;
+    padding-right: 10px;
+    border-right: 4px solid var(--secondary-color);
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-question::after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    transition: var(--transition);
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background-color: white;
+}
+
+.faq-item.active .faq-answer {
+    padding: 15px 20px;
+    max-height: 500px;
+    border-top: 1px solid #eee;
+}
+
+.no-results {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    display: none;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .faq-question {
+        padding: 12px 15px;
+        font-size: 0.95em;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        bottom: 20px;
+        left: 20px;
+    }
+}
+

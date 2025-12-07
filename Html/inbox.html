@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة تعليم القرآن الكريم</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- الخط -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/inbox.css">
+</head>
+
+<body>
+  <!-- شريط التنقل العلوي -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2 shadow-sm"
+    style="background-color: #1a3a30; border-bottom: 2px solid #c9b67a;">
+    <div class="container">
+      <!-- الشعار -->
+      <a class="navbar-brand d-flex align-items-center" href="inbox.html">
+        <img src="../images/logo.png" alt="شعار المنصة" style="height: 60px; margin-left: 15px;">
+        <span class="fw-bold" style="color: #ffffff; font-size: 1.4rem;">بالقرآن نحيا</span>
+      </a>
+
+      <!-- زر القائمة المنسدلة للهواتف -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- عناصر القائمة -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="inbox.html" style="color: #ffffff;">الرئيسية</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="about_me.html" style="color: #ffffff;">المعلمون</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-medium" href="contact.html" style="color: #ffffff;">تواصل معنا</a>
+          </li>
+        </ul>
+
+        <!-- أزرار تسجيل الدخول / الحساب -->
+        <a href="login.html" class="btn btn-outline-light me-2" style="border-color: #c9b67a; color: #ffffff;">
+          تسجيل الدخول
+        </a>
+        <a href="signup.html" class="btn btn-outline-light me-2" style="border-color: #c9b67a; color: #ffffff;">
+          إنشاء حساب
+        </a>
+        <a href="student_dashboard.html" class="btn btn-outline-light me-2" style="border-color: #c9b67a; color: #ffffff;">
+          لوحة التحكم
+        </a>
+        <a href="profile.html" class="btn btn-outline-light me-2" style="border-color: #c9b67a; color: #ffffff;">
+          الملف الشخصي
+        </a>
+        <a href="message_list.html" class="btn btn-outline-light" style="border-color: #c9b67a; color: #ffffff;">
+          الرسائل
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- مسافة لتجنب اختفاء المحتوى خلف النافبار -->
+  <div style="height: 80px;"></div>
+
+  <!-- الهيرو -->
+  <section class="position-relative mb-4">
+    <img src="../images/image-1754863136624.png" alt="مسجد" class="w-100"
+      style="max-height:260px; object-fit:cover; filter:brightness(0.85);">
+    <div class="position-absolute top-50 start-50 translate-middle text-white text-center"
+      style="text-shadow:0 2px 8px #8b78fb;">
+      <h1 class="display-5 fw-bold">بكلمة من القرآن نحن نعيش</h1>
+    </div>
+  </section>
+
+  <!-- القسم: التعريف بالمراحل -->
+  <section class="container my-5">
+    <h2 class="fw-bold text-center mb-5" style="color:#333;">التعريف بالمراحل</h2>
+
+    <div class="row align-items-center mb-5 section-card p-3">
+      <div class="col-md-8">
+        <h3 class="fw-bold text-center mb-3" style="color:#2a5d3f;">🌱 مرحلة حفظ القرآن للمبتدئين</h3>
+        <ul style="font-size:1.08rem; color:#37506b; line-height:2;">
+          <li><b>البداية السهلة:</b> بوابتك الأولى لحفظ كتاب الله، مهما كان عمرك أو خلفيتك.</li>
+          <li><b>خطة واضحة:</b> تتبع خطة مبسطة تسهّل عليك خطوات الحفظ تدريجيًا.</li>
+          <li><b>تعلم القراءة الصحيحة:</b> تدريب عملي على مخارج الحروف والنطق السليم.</li>
+          <li><b>حفظ سهل ومرن:</b> حفظ سور وآيات قصيرة تناسب وقتك وقدرتك.</li>
+          <li><b>دعم مستمر:</b> متابعة لبناء الثقة وتحفيزك للاستمرار حتى تصل لمراحل متقدمة.</li>
+          <li><b>هدف المرحلة:</b> تأسيس علاقة حب مع القرآن.</li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="../images/image-1754863136624.png" alt="مسجد" class="w-100"
+          style="max-height:260px; object-fit:cover; filter:brightness(0.85);">
+      </div>
+    </div>
+  </section>
+
+  <!-- القسم: بطاقات المراحل -->
+  <section class="container my-4">
+    <div class="row mb-3">
+      <div class="col-12 text-center mb-3">
+        <b>اختر مرحلتك لتعلم القرآن أو اشترك في المقرأة العامة</b>
+      </div>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+
+        <!-- مثال بطاقة -->
+        <div class="card section-card p-3" style="min-width:210px; max-width:250px;">
+          <div class="card-body text-center">
+            <h5 class="card-title">مبتدئ</h5>
+            <p class="card-text">ابدأ بنطق الحروف وتعلم الأساسيات</p>
+            <a href="subscribe.html" class="btn btn-warning">الاشتراك</a>
+          </div>
+        </div>
+
+        <div class="card section-card p-3" style="min-width:210px; max-width:250px;">
+          <div class="card-body text-center">
+            <h5 class="card-title">متوسط</h5>
+            <p class="card-text">بناء ثقتك وتعلم المزيد من التجويد</p>
+            <a href="subscribe.html" class="btn btn-warning">الاشتراك</a>
+            <a href="google_form.html" class="btn btn-primary mt-2">اذهب للامتحان</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="text-white py-5"
+    style="background: linear-gradient(135deg, #1a3a30 0%, #2c5c52 100%); font-family: 'Tajawal', sans-serif;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../images/logo.png" alt="شعار المنصة" style="height: 60px; margin-left: 15px;">
+            <h4 class="m-0" style="color: #c9b67a; font-size: 1.8rem; font-weight: 700;">بالقرآن نحيا</h4>
+          </div>
+          <p style="color: #e0e0e0; line-height: 1.8; font-size: 1.1rem;">
+            منصة متكاملة لتعليم القرآن الكريم وعلومه.
+          </p>
+        </div>
+        <div class="col-lg-8">
+          <div class="mt-4 pt-3 border-top border-secondary">
+            <div class="social-links mb-2">
+              <a href="https://wa.me/201092785005?text=مرحبا%20اريد%20التواصل%20معكم" target="_blank" class="me-2 text-success"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://t.me/+201092785005" target="_blank" class="me-2 text-info"><i class="fab fa-telegram-plane"></i></a>
+              <a href="https://www.facebook.com/ywsf.jml.882916?locale=ar_AR" target="_blank" class="me-2 text-primary"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://m.me/ywsf.jml.882916" target="_blank" class="me-2 text-primary"><i class="fab fa-facebook-messenger"></i></a>
+            </div>
+            <div class="small text-muted mb-2">
+              <a href="privacy.html" class="text-decoration-none me-3" style="color: #c9b67a;">سياسة الخصوصية</a>
+              <a href="terms.html" class="text-decoration-none me-3" style="color: #c9b67a;">الشروط والأحكام</a>
+              <a href="faq.html" class="text-decoration-none" style="color: #c9b67a;">الأسئلة الشائعة</a>
+            </div>
+            <div style="color: #8a9e94;">&copy; 2025 منصة تعليم القرآن الكريم. جميع الحقوق محفوظة</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

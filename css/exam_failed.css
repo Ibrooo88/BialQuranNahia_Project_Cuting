@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: "Tajawal", sans-serif;
+    background: #f8f9fa;
+}
+
+.navbar {
+    background-color: #18332B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.exam-fail-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff3f3;
+    border: 1px solid #f5c2c7;
+    text-align: center;
+}
+
+.exam-fail-container h3 {
+    color: #842029;
+    margin-bottom: 15px;
+}
+
+.exam-fail-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #18332B;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #145c45;
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الملف الشخصي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+
+<!-- الهيدر -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="inbox.html"><img src="../images/logo.png" alt="Logo" height="30"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="inbox.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="student_dashboard.html">لوحة التحكم</a></li>
+        <li class="nav-item"><a class="nav-link" href="subscribe.html">المكتبة</a></li>
+        <li class="nav-item"><a class="nav-link" href="about_me.html">المعلمين</a></li>
+        <li class="nav-item"><a class="nav-link" href="subscription_history.html">سجل الاشتراكات</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">الدعم</a></li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <span class="me-2">username123</span>
+        <img src="../images/myphoto.png" class="rounded-circle" height="40" width="40">
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- المحتوى الرئيسي -->
+<div class="container-fluid mt-4">
+  <div class="row">
+
+    <!-- يسار: الإحصائيات -->
+    <div class="col-lg-9">
+      <div class="row g-3">
+
+        <!-- الصناديق الصغيرة -->
+        <div class="col-md-3">
+          <div class="card p-3 text-center stat-card">
+            <p>المراجعات</p>
+            <h3 class="text-primary">85</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-3 text-center stat-card">
+            <p>الأجزاء المحفوظة</p>
+            <h3 class="text-success">12</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-3 text-center stat-card">
+            <p>التقييم</p>
+            <h3 class="text-warning">4.7</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-3 text-center stat-card">
+            <p>الاشتراكات</p>
+            <h3 class="text-info">3</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- روابط سريعة -->
+      <div class="row g-3 mt-3">
+        <div class="col-md-4">
+          <a href="student_dashboard.html" class="card text-decoration-none text-center p-4 hover-shadow">
+            <i class="fas fa-tachometer-alt fa-2x text-primary mb-2"></i>
+            <h5>لوحة التحكم</h5>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="subscription_history.html" class="card text-decoration-none text-center p-4 hover-shadow">
+            <i class="fas fa-history fa-2x text-success mb-2"></i>
+            <h5>سجل الاشتراكات</h5>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="subscribe.html" class="card text-decoration-none text-center p-4 hover-shadow">
+            <i class="fas fa-book fa-2x text-warning mb-2"></i>
+            <h5>المكتبة</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- يمين: معلومات إضافية -->
+    <div class="col-lg-3">
+      <div class="card">
+        <div class="card-body text-center">
+          <img src="../images/myphoto.png" class="rounded-circle mb-3" height="100" width="100">
+          <h5>اسم المستخدم</h5>
+          <p class="text-muted">username123</p>
+          <a href="student_dashboard.html" class="btn btn-primary w-100 mb-2">تعديل الملف الشخصي</a>
+          <a href="message_list.html" class="btn btn-outline-primary w-100 mb-2">الرسائل</a>
+          <a href="list.html" class="btn btn-outline-info w-100">التنبيهات</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

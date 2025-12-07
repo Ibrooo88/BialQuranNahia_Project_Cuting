@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - بالقرآن نحيا</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="inbox.html">
+                <img src="../images/logo.png" alt="شعار المنصة">
+                بالقرآن نحيا
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="inbox.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_me.html">المعلمون</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+                </ul>
+
+                <div class="d-flex">
+                    <!-- أزرار ثابتة بدون DTL -->
+                    <a href="student_dashboard.html" class="btn btn-outline-light me-2">
+                        <i class="fas fa-tachometer-alt"></i> لوحة التحكم
+                    </a>
+
+                    <a href="profile.html" class="btn btn-outline-light me-2">
+                        <i class="fas fa-user"></i> صفحتي
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container my-5 fade-in">
+        <div class="contact-container">
+            <h2>تواصل معنا</h2>
+            <p class="text-center mb-5">نحن هنا لمساعدتك. لا تتردد في التواصل معنا لأي استفسارات أو ملاحظات.</p>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>عنواننا</h4>
+                        <p>دمياط، مصر</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>اتصل بنا</h4>
+                        <p><a href="tel:+201092785005" style="color: inherit; text-decoration: none;">01092785005</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <h4>البريد الإلكتروني</h4>
+                        <p><a href="mailto:braagamal25@gmail.com" style="color: inherit; text-decoration: none;">braagamal25@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <h3 class="text-center mb-4" style="color: var(--primary);">
+                    <i class="fas fa-paper-plane me-2"></i> أرسل لنا رسالة
+                </h3>
+
+                <!-- Form without DTL -->
+                <form method="post" class="mt-4" id="contactForm">
+                    <div class="form-group mb-3">
+                        <label for="subject">الموضوع <span class="text-danger">*</span></label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="اكتب موضوع الرسالة" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="email">البريد الإلكتروني <span class="text-danger">*</span></label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="message">الرسالة <span class="text-danger">*</span></label>
+                        <textarea id="message" name="message" class="form-control" rows="6" placeholder="اكتب رسالتك هنا" required></textarea>
+                        <small class="text-muted">الحد الأقصى 1000 حرف</small>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                            <i class="fas fa-paper-plane me-2"></i> إرسال الرسالة
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mt-5 text-center">
+                <h4>تواصل معنا على وسائل التواصل الاجتماعي</h4>
+                <div class="contact-links d-flex justify-content-center gap-3 flex-wrap mt-4">
+                    <a href="https://wa.me/201092785005?text=مرحبا%20اريد%20التواصل%20معكم" target="_blank" class="btn btn-success btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i> واتساب
+                    </a>
+
+                    <a href="https://www.facebook.com/ywsf.jml.882916?locale=ar_AR" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="fab fa-facebook-f me-2"></i> فيسبوك
+                    </a>
+
+                    <a href="https://t.me/+201092785005" target="_blank" class="btn btn-info btn-lg">
+                        <i class="fab fa-telegram-plane me-2"></i> تيليجرام
+                    </a>
+
+                    <a href="https://m.me/ywsf.jml.882916" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="fab fa-facebook-messenger me-2"></i> ماسنجر
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color:#1a3a30; color:white; padding:20px 0;">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+            <p class="mb-0">© 2025 جميع الحقوق محفوظة لموقع بالقرآن نحيا</p>
+
+            <div>
+                <a href="privacy.html" class="text-decoration-none me-3" style="color: #c9b67a;">سياسة الخصوصية</a>
+                <a href="terms.html" class="text-decoration-none me-3" style="color: #c9b67a;">الشروط والأحكام</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

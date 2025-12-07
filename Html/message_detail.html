@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الرسالة - بالقرآن نحيا</title>
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tajawal Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/message_detail.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="inbox.html">
+                <img src="../images/logo.png" alt="شعار المنصة"> بالقرآن نحيا
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="inbox.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="subscribe.html">الدورات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_me.html">المعلمون</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="message_list.html">الرسائل <span class="badge bg-danger">3</span></a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="profile.html" class="btn btn-outline-light me-2"><i class="fas fa-user-circle me-1"></i> محمد علي</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-inbox me-2"></i>الرسائل</h5>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="message_list.html" class="list-group-item list-group-item-action"><i class="fas fa-arrow-right me-2"></i> العودة للرسائل</a>
+                            <a href="contact.html" class="list-group-item list-group-item-action text-success"><i class="fas fa-paper-plane me-2"></i> إرسال رسالة جديدة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="message-container">
+                        <div class="message-header">
+                            <h1>عنوان الرسالة التجريبي</h1>
+                            <div class="message-meta">
+                                <div class="message-meta-item"><i class="far fa-user"></i> المرسل: أحمد محمد</div>
+                                <div class="message-meta-item"><i class="far fa-calendar-alt"></i> التاريخ: 2025/11/30 07:00 PM</div>
+                                <div class="message-meta-item"><i class="fas fa-tag"></i> النوع: <span class="badge badge-type-message">رسالة</span></div>
+                                <div class="message-meta-item"><i class="fas fa-info-circle"></i> الحالة: <span class="badge badge-status-new">جديدة</span></div>
+                            </div>
+                        </div>
+                        <div class="message-body">
+                            <div class="message-content">
+                                هذه رسالة تجريبية لاختبار التصميم وعرض التفاصيل.
+                            </div>
+                            <div class="message-attachments">
+                                <h6><i class="fas fa-paperclip me-2"></i> المرفقات:</h6>
+                                <div class="attachment">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <div class="attachment-info">
+                                        <div class="attachment-name">ملف.pdf</div>
+                                        <div class="attachment-size">1.2 MB</div>
+                                    </div>
+                                    <a href="../images/logo.png" class="btn btn-sm btn-outline-primary" download><i class="fas fa-download"></i> تحميل</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-buttons px-4 pb-4">
+                            <a href="message_list.html" class="btn btn-outline-secondary"><i class="fas fa-arrow-right me-1"></i> العودة للقائمة</a>
+                            <button type="button" class="btn btn-primary"><i class="fas fa-reply me-1"></i> الرد على الرسالة</button>
+                            <a href="message_list.html" class="btn btn-outline-danger" onclick="return confirm('هل أنت متأكد من حذف هذه الرسالة؟');"><i class="fas fa-trash me-1"></i> حذف</a>
+                        </div>
+                    </div>
+
+                    <div class="message-thread">
+                        <h5 class="mb-4"><i class="fas fa-history me-2"></i> سجل المحادثة</h5>
+                        <div class="thread-item">
+                            <div class="thread-header">
+                                <div class="thread-sender">أنت</div>
+                                <div class="thread-date"><i class="far fa-clock me-1"></i> منذ 2 ساعة</div>
+                            </div>
+                            <div class="thread-body">رد تجريبي على الرسالة.</div>
+                        </div>
+                        <div class="thread-item">
+                            <div class="thread-header">
+                                <div class="thread-sender">أحمد محمد</div>
+                                <div class="thread-date"><i class="far fa-clock me-1"></i> منذ 3 ساعات</div>
+                            </div>
+                            <div class="thread-body">رد تجريبي آخر من المرسل.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p>© 2025 جميع الحقوق محفوظة لموقع بالقرآن نحيا</p>
+            <div class="footer-bottom">
+                <a href="privacy.html">سياسة الخصوصية</a> | <a href="terms.html">الشروط والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
