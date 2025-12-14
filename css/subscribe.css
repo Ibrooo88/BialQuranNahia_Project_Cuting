@@ -48,5 +48,29 @@ body {
 
 .text-danger { 
     font-size: 0.9em; 
+    display: none;
+}
+
+.text-danger.show {
+    display: inline-block;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #1a3a30 !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-left: 15px;
+}
+
+/* Preview image */
+#preview-img {
+    display: none;
+}
+
+#preview-img.show {
+    display: block;
 }
 

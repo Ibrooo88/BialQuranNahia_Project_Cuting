@@ -12,17 +12,32 @@
   <!-- الخط -->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/inbox.css">
+  <style>
+      .navbar {
+          background-color: #1a3a30 !important;
+          border-bottom: 2px solid #c9b67a;
+          padding: 0.25rem 0 !important;
+      }
+      .navbar-light {
+          background-color: #1a3a30 !important;
+      }
+      .navbar .nav-link, .navbar .navbar-brand-text {
+          color: white !important;
+      }
+      body {
+          padding-top: 60px;
+      }
+  </style>
 </head>
 
 <body>
   <!-- شريط التنقل العلوي -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2 shadow-sm"
-    style="background-color: #1a3a30; border-bottom: 2px solid #c9b67a;">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
     <div class="container">
       <!-- الشعار -->
-      <a class="navbar-brand d-flex align-items-center" href="inbox.html">
-        <img src="../images/logo.png" alt="شعار المنصة" style="height: 60px; margin-left: 15px;">
-        <span class="fw-bold" style="color: #ffffff; font-size: 1.4rem;">بالقرآن نحيا</span>
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="../images/logo.png" alt="شعار المنصة" class="navbar-brand-img">
+        <span class="fw-bold navbar-brand-text">بالقرآن نحيا</span>
       </a>
 
       <!-- زر القائمة المنسدلة للهواتف -->
@@ -35,30 +50,30 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item mx-2">
-            <a class="nav-link fw-medium" href="inbox.html" style="color: #ffffff;">الرئيسية</a>
+            <a class="nav-link fw-medium" href="index.html">الرئيسية</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link fw-medium" href="about_me.html" style="color: #ffffff;">المعلمون</a>
+            <a class="nav-link fw-medium" href="about_me.html">المعلمون</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link fw-medium" href="contact.html" style="color: #ffffff;">تواصل معنا</a>
+            <a class="nav-link fw-medium" href="contact.html">تواصل معنا</a>
           </li>
         </ul>
 
         <!-- أزرار تسجيل الدخول / الحساب -->
-        <a href="login.html" class="btn btn-outline-light me-2" style="border-color: #c9b67a; color: #ffffff;">
+        <a href="login.html" class="btn btn-outline-light me-2">
           تسجيل الدخول
         </a>
-        <a href="signup.html" class="btn btn-outline-light me-2" style="border-color: #c9b67a; color: #ffffff;">
+        <a href="signup.html" class="btn btn-outline-light me-2">
           إنشاء حساب
         </a>
-        <a href="student_dashboard.html" class="btn btn-outline-light me-2" style="border-color: #c9b67a; color: #ffffff;">
+        <a href="student_dashboard.html" class="btn btn-outline-light me-2">
           لوحة التحكم
         </a>
-        <a href="profile.html" class="btn btn-outline-light me-2" style="border-color: #c9b67a; color: #ffffff;">
+        <a href="profile.html" class="btn btn-outline-light me-2">
           الملف الشخصي
         </a>
-        <a href="message_list.html" class="btn btn-outline-light" style="border-color: #c9b67a; color: #ffffff;">
+        <a href="message_list.html" class="btn btn-outline-light">
           الرسائل
         </a>
       </div>
@@ -66,26 +81,24 @@
   </nav>
 
   <!-- مسافة لتجنب اختفاء المحتوى خلف النافبار -->
-  <div style="height: 80px;"></div>
+  <div class="navbar-spacer"></div>
 
   <!-- الهيرو -->
   <section class="position-relative mb-4">
-    <img src="../images/image-1754863136624.png" alt="مسجد" class="w-100"
-      style="max-height:260px; object-fit:cover; filter:brightness(0.85);">
-    <div class="position-absolute top-50 start-50 translate-middle text-white text-center"
-      style="text-shadow:0 2px 8px #8b78fb;">
+    <img src="../images/image-1754863136624.png" alt="مسجد" class="w-100 hero-image">
+    <div class="position-absolute top-50 start-50 translate-middle text-white text-center hero-text">
       <h1 class="display-5 fw-bold">بكلمة من القرآن نحن نعيش</h1>
     </div>
   </section>
 
   <!-- القسم: التعريف بالمراحل -->
   <section class="container my-5">
-    <h2 class="fw-bold text-center mb-5" style="color:#333;">التعريف بالمراحل</h2>
+    <h2 class="fw-bold text-center mb-5 section-title-custom">التعريف بالمراحل</h2>
 
     <div class="row align-items-center mb-5 section-card p-3">
       <div class="col-md-8">
-        <h3 class="fw-bold text-center mb-3" style="color:#2a5d3f;">🌱 مرحلة حفظ القرآن للمبتدئين</h3>
-        <ul style="font-size:1.08rem; color:#37506b; line-height:2;">
+        <h3 class="fw-bold text-center mb-3 section-subtitle">🌱 مرحلة حفظ القرآن للمبتدئين</h3>
+        <ul class="section-list">
           <li><b>البداية السهلة:</b> بوابتك الأولى لحفظ كتاب الله، مهما كان عمرك أو خلفيتك.</li>
           <li><b>خطة واضحة:</b> تتبع خطة مبسطة تسهّل عليك خطوات الحفظ تدريجيًا.</li>
           <li><b>تعلم القراءة الصحيحة:</b> تدريب عملي على مخارج الحروف والنطق السليم.</li>
@@ -95,8 +108,7 @@
         </ul>
       </div>
       <div class="col-md-4 text-center">
-        <img src="../images/image-1754863136624.png" alt="مسجد" class="w-100"
-          style="max-height:260px; object-fit:cover; filter:brightness(0.85);">
+        <img src="../images/image-1754863136624.png" alt="مسجد" class="w-100 hero-image">
       </div>
     </div>
   </section>
@@ -110,7 +122,7 @@
       <div class="d-flex justify-content-center flex-wrap gap-3">
 
         <!-- مثال بطاقة -->
-        <div class="card section-card p-3" style="min-width:210px; max-width:250px;">
+        <div class="card section-card p-3 section-card-custom">
           <div class="card-body text-center">
             <h5 class="card-title">مبتدئ</h5>
             <p class="card-text">ابدأ بنطق الحروف وتعلم الأساسيات</p>
@@ -118,7 +130,7 @@
           </div>
         </div>
 
-        <div class="card section-card p-3" style="min-width:210px; max-width:250px;">
+        <div class="card section-card p-3 section-card-custom">
           <div class="card-body text-center">
             <h5 class="card-title">متوسط</h5>
             <p class="card-text">بناء ثقتك وتعلم المزيد من التجويد</p>
@@ -132,16 +144,15 @@
   </section>
 
   <!-- الفوتر -->
-  <footer class="text-white py-5"
-    style="background: linear-gradient(135deg, #1a3a30 0%, #2c5c52 100%); font-family: 'Tajawal', sans-serif;">
+  <footer class="text-white py-5 footer-gradient">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="d-flex align-items-center mb-3">
-            <img src="../images/logo.png" alt="شعار المنصة" style="height: 60px; margin-left: 15px;">
-            <h4 class="m-0" style="color: #c9b67a; font-size: 1.8rem; font-weight: 700;">بالقرآن نحيا</h4>
+            <img src="../images/logo.png" alt="شعار المنصة" class="footer-logo">
+            <h4 class="m-0 footer-title">بالقرآن نحيا</h4>
           </div>
-          <p style="color: #e0e0e0; line-height: 1.8; font-size: 1.1rem;">
+          <p class="footer-text">
             منصة متكاملة لتعليم القرآن الكريم وعلومه.
           </p>
         </div>
@@ -154,11 +165,11 @@
               <a href="https://m.me/ywsf.jml.882916" target="_blank" class="me-2 text-primary"><i class="fab fa-facebook-messenger"></i></a>
             </div>
             <div class="small text-muted mb-2">
-              <a href="privacy.html" class="text-decoration-none me-3" style="color: #c9b67a;">سياسة الخصوصية</a>
-              <a href="terms.html" class="text-decoration-none me-3" style="color: #c9b67a;">الشروط والأحكام</a>
-              <a href="faq.html" class="text-decoration-none" style="color: #c9b67a;">الأسئلة الشائعة</a>
+              <a href="privacy.html" class="text-decoration-none me-3 footer-link">سياسة الخصوصية</a>
+              <a href="terms.html" class="text-decoration-none me-3 footer-link">الشروط والأحكام</a>
+              <a href="faq.html" class="text-decoration-none footer-link">الأسئلة الشائعة</a>
             </div>
-            <div style="color: #8a9e94;">&copy; 2025 منصة تعليم القرآن الكريم. جميع الحقوق محفوظة</div>
+            <div class="footer-copyright">&copy; 2025 منصة تعليم القرآن الكريم. جميع الحقوق محفوظة</div>
           </div>
         </div>
       </div>

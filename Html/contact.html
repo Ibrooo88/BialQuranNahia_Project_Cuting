@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/contact.css">
+    <style>
+        .navbar {
+            background-color: #1a3a30 !important;
+            border-bottom: 2px solid #c9b67a;
+            padding: 0.25rem 0 !important;
+        }
+        body {
+            padding-top: 60px;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +27,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="inbox.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="../images/logo.png" alt="شعار المنصة">
                 بالقرآن نحيا
             </a>
@@ -28,7 +38,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="inbox.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
                     <li class="nav-item"><a class="nav-link" href="about_me.html">المعلمون</a></li>
                     <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
                 </ul>
@@ -66,7 +76,7 @@
                     <div class="contact-info">
                         <i class="fas fa-phone-alt"></i>
                         <h4>اتصل بنا</h4>
-                        <p><a href="tel:+201092785005" style="color: inherit; text-decoration: none;">01092785005</a></p>
+                        <p><a href="tel:+201092785005">01092785005</a></p>
                     </div>
                 </div>
 
@@ -74,13 +84,13 @@
                     <div class="contact-info">
                         <i class="fas fa-envelope"></i>
                         <h4>البريد الإلكتروني</h4>
-                        <p><a href="mailto:braagamal25@gmail.com" style="color: inherit; text-decoration: none;">braagamal25@gmail.com</a></p>
+                        <p><a href="mailto:braagamal25@gmail.com">braagamal25@gmail.com</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="mt-5">
-                <h3 class="text-center mb-4" style="color: var(--primary);">
+                <h3 class="text-center mb-4 contact-section-title">
                     <i class="fas fa-paper-plane me-2"></i> أرسل لنا رسالة
                 </h3>
 
@@ -93,12 +103,12 @@
 
                     <div class="form-group mb-3">
                         <label for="email">البريد الإلكتروني <span class="text-danger">*</span></label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required pattern="[^\s@]+@[^\s@]+\.[^\s@]+">
                     </div>
 
                     <div class="form-group mb-3">
                         <label for="message">الرسالة <span class="text-danger">*</span></label>
-                        <textarea id="message" name="message" class="form-control" rows="6" placeholder="اكتب رسالتك هنا" required></textarea>
+                        <textarea id="message" name="message" class="form-control" rows="6" placeholder="اكتب رسالتك هنا" required maxlength="1000"></textarea>
                         <small class="text-muted">الحد الأقصى 1000 حرف</small>
                     </div>
 
@@ -135,14 +145,14 @@
     </div>
 
     <!-- Footer -->
-    <footer style="background-color:#1a3a30; color:white; padding:20px 0;">
+    <footer>
         <div class="container d-flex justify-content-between align-items-center flex-wrap">
 
             <p class="mb-0">© 2025 جميع الحقوق محفوظة لموقع بالقرآن نحيا</p>
 
             <div>
-                <a href="privacy.html" class="text-decoration-none me-3" style="color: #c9b67a;">سياسة الخصوصية</a>
-                <a href="terms.html" class="text-decoration-none me-3" style="color: #c9b67a;">الشروط والأحكام</a>
+                <a href="privacy.html" class="text-decoration-none me-3">سياسة الخصوصية</a>
+                <a href="terms.html" class="text-decoration-none me-3">الشروط والأحكام</a>
             </div>
 
         </div>

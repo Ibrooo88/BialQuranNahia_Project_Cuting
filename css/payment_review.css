@@ -36,3 +36,12 @@ body {
     color: #1a3a30; 
 }
 
+/* Hidden block */
+.hidden-block {
+    display: none;
+}
+
+.hidden-block.show {
+    display: block;
+}
+

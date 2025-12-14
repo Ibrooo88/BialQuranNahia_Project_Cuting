@@ -244,6 +244,10 @@ h3 {
     margin-bottom: 1.5rem;
 }
 
+.contact-section-title {
+    color: var(--primary);
+}
+
 h4 {
     color: var(--primary);
     font-weight: 600;
@@ -337,5 +341,25 @@ footer a:hover {
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+/* Contact links hover effect */
+.contact-links a {
+    transition: transform 0.3s ease;
+}
+
+.contact-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a3a30;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #c9b67a;
 }
 

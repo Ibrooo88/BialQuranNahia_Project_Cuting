@@ -25,3 +25,96 @@ body {
     cursor: not-allowed;
     opacity: 0.7;
 }
+
+/* Navbar styles */
+.navbar {
+    background-color: #1a3a30 !important;
+    border-bottom: 2px solid #c9b67a !important;
+}
+
+.navbar-brand img {
+    height: 60px;
+    margin-left: 15px;
+}
+
+.navbar-brand span {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.btn-outline-light {
+    border-color: #c9b67a;
+    color: #ffffff;
+}
+
+/* Spacing for fixed navbar */
+.navbar-spacer {
+    height: 80px;
+}
+
+/* Hero section */
+.hero-image {
+    max-height: 260px;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+.hero-text {
+    text-shadow: 0 2px 8px #8b78fb;
+}
+
+/* Section styles */
+.section-title-custom {
+    color: #333;
+}
+
+.section-subtitle {
+    color: #2a5d3f;
+}
+
+.section-list {
+    font-size: 1.08rem;
+    color: #37506b;
+    line-height: 2;
+}
+
+/* Card styles */
+.section-card-custom {
+    min-width: 210px;
+    max-width: 250px;
+}
+
+/* Footer styles */
+.footer-gradient {
+    background: linear-gradient(135deg, #1a3a30 0%, #2c5c52 100%);
+    font-family: 'Tajawal', sans-serif;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-left: 15px;
+}
+
+.footer-title {
+    color: #c9b67a;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.footer-text {
+    color: #e0e0e0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.footer-link {
+    color: #c9b67a;
+}
+
+.footer-copyright {
+    color: #8a9e94;
+}

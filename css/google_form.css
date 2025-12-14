@@ -52,6 +52,34 @@ body {
     color: #fff;
 }
 
+/* Navbar logo link */
+.logo a {
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+/* Actions container */
+.actions > div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Button outline with green background */
+.btn-outline.green {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-outline.green:hover {
+    background-color: #218838;
+    color: white;
+}
+
 .content {
     text-align: center;
     padding: 20px;

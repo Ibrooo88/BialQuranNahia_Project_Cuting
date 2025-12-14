@@ -122,6 +122,16 @@ img {
     margin-left: 10px;
 }
 
+/* Common navbar styles for all pages */
+.navbar-dark {
+    background-color: #1a3a30 !important;
+}
+
+.navbar-brand-img {
+    height: 40px;
+    margin-left: 15px;
+}
+
 .nav-link {
     color: var(--white) !important;
     font-weight: 500;

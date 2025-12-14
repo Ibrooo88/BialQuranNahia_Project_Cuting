@@ -12,15 +12,30 @@
     <!-- Tajawal Font -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/message_list.css">
+    <style>
+        .navbar {
+            background-color: #1a3a30 !important;
+            border-bottom: 2px solid #c9b67a;
+            padding: 0.5rem 0 !important;
+            min-height: 60px;
+        }
+        .navbar-brand-img {
+            height: 40px;
+            width: auto;
+        }
+        body {
+            padding-top: 70px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="inbox.html">
-                <img src="../images/logo.png" alt="شعار المنصة">
-                بالقرآن نحيا
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="../images/logo.png" alt="شعار المنصة" class="navbar-brand-img">
+                <span>بالقرآن نحيا</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
@@ -29,13 +44,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="inbox.html">الرئيسية</a>
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student_dashboard.html">لوحة التحكم</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="message_list.html">
                             الرسائل
                             <span class="badge bg-danger">3</span>
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
                     </li>
                 </ul>
                 <div class="d-flex">

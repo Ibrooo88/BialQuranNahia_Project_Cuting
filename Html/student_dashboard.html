@@ -17,12 +17,12 @@
 
 <body class="bg-gray-50">
 
-<header class="fixed w-full top-0 z-50" style="background-color: #1a3a30; border-bottom: 2px solid #c9b67a;">
+<header class="fixed w-full top-0 z-50">
     <div class="container mx-auto px-3">
         <nav class="flex items-center justify-between py-1">
 
             <!-- Logo -->
-            <a href="inbox.html" class="flex items-center space-x-2 no-underline">
+            <a href="index.html" class="flex items-center space-x-2 no-underline">
                 <img src="../images/logo.png" alt="شعار المنصة" class="h-10 ml-3">
                 <span class="font-bold text-white text-lg font-['Tajawal']">بالقرآن نحيا</span>
             </a>
@@ -30,7 +30,7 @@
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-3 space-x-reverse">
 
-                <a href="inbox.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">الرئيسية</a>
+                <a href="index.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">الرئيسية</a>
                 <a href="about_me.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">المعلمون</a>
                 <a href="contact.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">تواصل معنا</a>
                 <a href="student_meetings.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">الاجتماعات</a>
@@ -72,7 +72,7 @@
     <!-- Mobile menu -->
     <div class="md:hidden hidden bg-green-800" id="mobile-menu">
         <div class="px-2 py-1 space-y-0">
-            <a href="inbox.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">الرئيسية</a>
+            <a href="index.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">الرئيسية</a>
             <a href="about_me.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">المعلمون</a>
             <a href="contact.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">تواصل معنا</a>
             <a href="student_meetings.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">الاجتماعات</a>
@@ -135,8 +135,8 @@
                             <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
                                 <h3 class="text-lg font-bold mb-4">إدخال بيانات المستخدم</h3>
 
-                                <form id="profile-form" method="POST"
-                                      action="UPDATE_PROFILE_URL"
+                                <form id="profile-form" 
+                                     
                                       enctype="multipart/form-data">
 
                                     <label class="block mb-2">الصورة:</label>
@@ -223,7 +223,7 @@
 
 <div class="mt-8">
     <h3 class="text-lg font-bold mb-4">تقدم الحفظ الأسبوعي</h3>
-    <div id="weeklyLineChart" style="width: 100%; height: 300px;"></div>
+    <div id="weeklyLineChart"></div>
 </div>
 </div>
 
@@ -316,8 +316,7 @@
         <h3 class="text-lg font-medium mb-4">خطة المراجعة اليومية</h3>
 
         <!-- تكرار الخطة -->
-        <div class="plan-card"
-            style="text-align: right; margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 10px; background: #f9f9f9;">
+        <div class="plan-card">
 
             <p>PLAN_TITLE</p>
             <p>PLAN_DESCRIPTION</p>
@@ -326,20 +325,20 @@
             <p>السورة: PLAN_SURAH</p>
             <p>عدد الآيات: PLAN_AYAT</p>
 
-            <div style="display: flex; align-items: center; margin-top: 10px;">
+            <div class="toggle-container">
                 <label class="toggle-switch">
                     <input type="checkbox" class="reminder-toggle" data-id="PLAN_ID">
                     <span class="slider"></span>
                 </label>
-                <span style="margin-right: 10px;">تفعيل التذكير اليومي</span>
+                <span class="toggle-label">تفعيل التذكير اليومي</span>
             </div>
 
-            <div style="display: flex; align-items: center; margin-top: 10px;">
+            <div class="toggle-container">
                 <label class="toggle-switch">
                     <input type="checkbox" class="completed-toggle" data-id="PLAN_ID">
                     <span class="slider"></span>
                 </label>
-                <span style="margin-right: 10px;">تحديد الخطة كمكتملة</span>
+                <span class="toggle-label">تحديد الخطة كمكتملة</span>
             </div>
         </div>
 
@@ -462,4 +461,4 @@
 </footer>
 
 <!-- External JavaScript -->
-<script src="../js/student_dashboard.js"></script>
+<!-- Note: JavaScript functionality should be moved to a separate JS file if needed -->

@@ -12,11 +12,41 @@
         <div id="timerBlock">
             <p>سيتم تحويلك تلقائيًا إلى الصفحة الرئيسية خلال <span class="timer" id="timer">7</span> ثانية...</p>
         </div>
-        <div id="homeBtnBlock" style="display:none;">
+        <div id="homeBtnBlock" class="hidden-block">
             <p>لا يمكنك الرجوع إلى صفحة الدفع.</p>
-            <a href="inbox.html" class="btn btn-main">العودة للصفحة الرئيسية</a>
+            <a href="index.html" class="btn btn-main">العودة للصفحة الرئيسية</a>
         </div>
     </div>
-    <script src="../js/payment_review.js"></script>
+    <script>
+        // Check if coming from payment page
+        const urlParams = new URLSearchParams(window.location.search);
+        const fromPayment = urlParams.get('from') === 'payment';
+        
+        if (fromPayment) {
+            let countdown = 7;
+            const timerElement = document.getElementById('timer');
+            const timerBlock = document.getElementById('timerBlock');
+            const homeBtnBlock = document.getElementById('homeBtnBlock');
+            
+            const interval = setInterval(function() {
+                countdown--;
+                timerElement.textContent = countdown;
+                
+                if (countdown <= 0) {
+                    clearInterval(interval);
+                    timerBlock.style.display = 'none';
+                    homeBtnBlock.classList.add('show');
+                    // Redirect to main page
+                    setTimeout(function() {
+                        window.location.href = 'index.html';
+                    }, 1000);
+                }
+            }, 1000);
+        } else {
+            // If not from payment, show button immediately
+            document.getElementById('timerBlock').style.display = 'none';
+            document.getElementById('homeBtnBlock').classList.add('show');
+        }
+    </script>
 </body>
 </html>
