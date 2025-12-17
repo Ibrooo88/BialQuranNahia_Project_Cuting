@@ -11,14 +11,12 @@
 <body>
 <div class="login-container">
     <div class="login-box row g-0">
-        <!-- Left side -->
         <div class="login-left col-md-6">
             <h2 class="mb-1">مرحباً بعودتك</h2>
             <p class="text-muted mb-4">سجل الدخول للمتابعة في منصتنا</p>
 
             <form method="POST" id="loginForm" class="mt-4">
                 <div id="errorAlert" class="alert alert-danger d-none"></div>
-                <!-- csrf_token غير مطلوب في HTML الصافي -->
                 <div class="mb-3">
                     <label class="form-label">البريد الإلكتروني</label>
                     <input type="email" name="email" id="email" class="form-control" required 
@@ -49,17 +47,10 @@
                 
                 <div class="divider">أو</div>
                 
-                <div class="d-grid gap-2">
-                    <a href="#" class="btn btn-outline-danger d-flex align-items-center justify-content-center">
-                        <img src="../images/Google__G__logo.svg.webp" alt="Google" width="20" class="me-2">
-                        تسجيل الدخول بحساب Google
-                    </a>
-                    <!-- أضف مزودين آخرين هنا -->
-                </div>
+                
             </form>
         </div>
         
-        <!-- Right side -->
         <div class="login-right col-md-6 d-none d-md-flex">
             <div class="login-right-content">
                 <img src="../images/logo.png" alt="Logo" class="mb-4">
@@ -93,10 +84,8 @@
         const password = document.getElementById('password').value;
         const errorAlert = document.getElementById('errorAlert');
         
-        // إخفاء رسالة الخطأ السابقة
         errorAlert.classList.add('d-none');
         
-        // التحقق من البيانات
         if (!email || !email.includes('@')) {
             showError('الرجاء إدخال بريد إلكتروني صحيح');
             return;
@@ -107,7 +96,6 @@
             return;
         }
         
-        // إذا كانت جميع البيانات صحيحة، توجيه للصفحة الرئيسية
         window.location.href = 'index.html';
     });
     

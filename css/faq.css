@@ -33,7 +33,6 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-/* تنسيقات النافبار */
 .navbar {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -208,7 +207,6 @@ h1 {
     }
 }
 
-/* Navbar styles */
 .navbar {
     background-color: #1a3a30 !important;
     border-bottom: 2px solid #c9b67a !important;
@@ -233,13 +231,11 @@ h1 {
     color: #ffffff;
 }
 
-/* No results icon */
 .no-results i {
     color: #ddd;
     margin-bottom: 15px;
 }
 
-/* Contact support section */
 .contact-support {
     text-align: center;
     margin: 40px 0 20px;

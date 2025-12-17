@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/profile.css">
     <style>
-        /* Navbar matching student_dashboard */
         .navbar-custom {
             background-color: #1a3a30 !important;
             border-bottom: 2px solid #c9b67a;
@@ -32,7 +31,6 @@
             padding-top: 60px;
         }
         
-        /* CSS-only modal */
         .modal {
             display: none;
             position: fixed;
@@ -98,15 +96,12 @@
   </div>
 </nav>
 
-<!-- المحتوى الرئيسي -->
 <div class="container-fluid mt-4">
   <div class="row">
 
-    <!-- يسار: الإحصائيات -->
     <div class="col-lg-9">
       <div class="row g-3">
 
-        <!-- الصناديق الصغيرة -->
         <div class="col-md-3">
           <div class="card p-3 text-center stat-card">
             <p>المراجعات</p>
@@ -136,7 +131,6 @@
         </div>
       </div>
 
-      <!-- روابط سريعة -->
       <div class="row g-3 mt-3">
         <div class="col-md-4">
           <a href="student_dashboard.html" class="card text-decoration-none text-center p-4 hover-shadow">
@@ -159,7 +153,6 @@
       </div>
     </div>
 
-    <!-- يمين: معلومات إضافية -->
     <div class="col-lg-3">
       <div class="card">
         <div class="card-body text-center">
@@ -184,7 +177,7 @@
     <div class="modal-content">
         <a href="#" class="close">&times;</a>
         <h3 class="mb-4">تعديل البيانات الشخصية</h3>
-        <form enctype="multipart/form-data" onsubmit="return false;">
+        <form enctype="multipart/form-data" method="get" action="#"  onsubmit="return false;">
           <div class="mb-3">
                 <label class="form-label">الصورة:</label>
                 <div class="d-flex align-items-center gap-3 mb-3">
@@ -225,7 +218,7 @@
             
             <div class="d-flex justify-content-end gap-2 mt-4">
                 <a href="#" class="btn btn-secondary">إلغاء</a>
-                <button type="submit" class="btn btn-primary">حفظ التغييرات</button>
+                <a href="#" type="submit" class="btn btn-primary">حفظ التغييرات</a>
             </div>
         </form>
     </div>

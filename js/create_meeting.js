@@ -1,10 +1,10 @@
 const domain = "meet.jit.si";
 
 const options = {
-    roomName: "my_meeting_room",  // ← اكتب اسم الغرفة هنا يدويًا
+    roomName: "my_meeting_room",   
     parentNode: document.querySelector('#jitsi'),
     userInfo: { 
-        displayName: "ضيف"  // ← اسم المستخدم ثابت بدون Django
+        displayName: "ضيف"  
     },
     configOverwrite: {
         startWithAudioMuted: true,

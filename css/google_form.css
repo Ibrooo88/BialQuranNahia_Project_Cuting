@@ -52,7 +52,6 @@ body {
     color: #fff;
 }
 
-/* Navbar logo link */
 .logo a {
     text-decoration: none;
 }
@@ -62,14 +61,12 @@ body {
     font-size: 1.4rem;
 }
 
-/* Actions container */
 .actions > div {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-/* Button outline with green background */
 .btn-outline.green {
     background-color: #28a745;
     color: white;

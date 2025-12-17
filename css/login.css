@@ -98,12 +98,10 @@ body {
     margin-left: 1.5rem; 
 }
 
-/* Logo in login right side */
 .login-right-content img {
     max-width: 150px;
 }
 
-/* Prevent horizontal scroll */
 body {
     overflow-x: hidden;
 }

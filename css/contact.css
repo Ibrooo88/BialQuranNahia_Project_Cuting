@@ -1,4 +1,3 @@
-/* Contact Page Styles */
 
 :root {
     --primary: #1a3a30;
@@ -12,7 +11,6 @@
     --transition: all 0.3s ease;
 }
 
-/* Body and Container */
 body {
     font-family: 'Tajawal', sans-serif;
     background-color: #f8f5f0;
@@ -20,7 +18,6 @@ body {
     direction: rtl;
 }
 
-/* Navbar Logo */
 .navbar-brand img {
     height: 40px;
     width: auto;
@@ -33,7 +30,6 @@ body {
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
 }
 
-/* Navbar */
 .navbar {
     background-color: var(--primary) !important;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -49,7 +45,6 @@ body {
     color: var(--secondary);
 }
 
-/* Fade In Animation */
 .fade-in {
     animation: fadeIn 0.8s ease-in;
 }
@@ -65,7 +60,6 @@ body {
     }
 }
 
-/* Contact Container */
 .contact-container {
     background: white;
     border-radius: var(--border-radius);
@@ -87,7 +81,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Contact Info Cards */
 .contact-info {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     border-radius: var(--border-radius);
@@ -142,7 +135,6 @@ body {
     text-decoration: underline;
 }
 
-/* Form Styles */
 #contactForm {
     max-width: 700px;
     margin: 0 auto;
@@ -179,7 +171,6 @@ textarea.form-control {
     min-height: 150px;
 }
 
-/* Button Styles */
 .btn-primary {
     background-color: var(--primary);
     border: none;
@@ -200,7 +191,6 @@ textarea.form-control {
     transform: translateY(0);
 }
 
-/* Contact Links (Social Media) */
 .contact-links {
     margin-top: 2rem;
 }
@@ -237,7 +227,6 @@ textarea.form-control {
     background-color: #0077b5;
 }
 
-/* Section Headings */
 h3 {
     color: var(--primary);
     font-weight: 700;
@@ -254,7 +243,6 @@ h4 {
     margin-bottom: 1rem;
 }
 
-/* Footer */
 footer {
     background-color: var(--primary) !important;
     margin-top: 4rem;
@@ -270,7 +258,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .contact-container {
         padding: 2rem 1.5rem;
@@ -317,13 +304,11 @@ footer a:hover {
     }
 }
 
-/* Loading State */
 .btn-primary:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
-/* Success Message */
 .alert-success {
     background-color: #d4edda;
     border-color: #c3e6cb;
@@ -333,7 +318,6 @@ footer a:hover {
     margin-bottom: 1rem;
 }
 
-/* Error Message */
 .alert-danger {
     background-color: #f8d7da;
     border-color: #f5c6cb;
@@ -343,7 +327,6 @@ footer a:hover {
     margin-bottom: 1rem;
 }
 
-/* Contact links hover effect */
 .contact-links a {
     transition: transform 0.3s ease;
 }
@@ -352,7 +335,6 @@ footer a:hover {
     transform: scale(1.1);
 }
 
-/* Footer styles */
 footer {
     background-color: #1a3a30;
     color: white;

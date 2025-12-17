@@ -1,464 +1,444 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة الطالب - منصة القرآن الكريم</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة الطالب - نسخة HTML ثابتة</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/student_dashboard.CSS">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Custom CSS (مطابق للملف الأول) -->
+  <link rel="stylesheet" href="../css/student_dashboard.CSS">
+
+  
 </head>
 
-<body class="bg-gray-50">
-
-<header class="fixed w-full top-0 z-50">
-    <div class="container mx-auto px-3">
-        <nav class="flex items-center justify-between py-1">
-
-            <!-- Logo -->
-            <a href="index.html" class="flex items-center space-x-2 no-underline">
-                <img src="../images/logo.png" alt="شعار المنصة" class="h-10 ml-3">
-                <span class="font-bold text-white text-lg font-['Tajawal']">بالقرآن نحيا</span>
-            </a>
-
-            <!-- Desktop Navigation -->
-            <div class="hidden md:flex items-center space-x-3 space-x-reverse">
-
-                <a href="index.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">الرئيسية</a>
-                <a href="about_me.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">المعلمون</a>
-                <a href="contact.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">تواصل معنا</a>
-                <a href="student_meetings.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">الاجتماعات</a>
-                <a href="list.html" class="text-white hover:text-gray-200 text-sm font-medium px-2 py-1">التنبيهات</a>
-
-                <a href="message_list.html" class="relative ml-4">
-                    <i class="ri-notification-3-line text-white"></i>
-
-                    <!-- Placeholder notification badge -->
-                    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center">
-                        0
-                    </span>
-                </a>
-
-                <!-- User Info -->
-                <a href="profile.html" class="flex items-center no-underline hover:opacity-80">
-                    <div class="w-8 h-8 rounded-full overflow-hidden ml-2">
-                        <img id="navbar-image" src="../images/myphoto.png" alt="صورة المستخدم" class="w-full h-full object-cover">
-                    </div>
-                    <span class="text-white text-sm font-medium mr-1">
-                        اسم المستخدم
-                    </span>
-                </a>
-
-            </div>
-        </nav>
-    </div>
-
-    <!-- Mobile menu button -->
-    <div class="md:hidden">
-        <button id="menu-toggle" class="md:hidden text-white p-2 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-        </button>
-    </div>
-
-    <!-- Mobile menu -->
-    <div class="md:hidden hidden bg-green-800" id="mobile-menu">
-        <div class="px-2 py-1 space-y-0">
-            <a href="index.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">الرئيسية</a>
-            <a href="about_me.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">المعلمون</a>
-            <a href="contact.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">تواصل معنا</a>
-            <a href="student_meetings.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">الاجتماعات</a>
-            <a href="list.html" class="block px-3 py-1.5 text-sm text-white hover:bg-green-700">التنبيهات</a>
-
-            <div class="pt-2 border-t border-green-700">
-                <div class="flex items-center px-3 py-1.5">
-                    <div class="w-7 h-7 rounded-full overflow-hidden ml-2">
-                        <img src="../images/myphoto.png" alt="صورة المستخدم" class="w-full h-full object-cover">
-                    </div>
-                    <span class="text-white text-sm">حسابي</span>
-                </div>
-            </div>
+<body style="background:#f9fafb;">
+  <header class="fixed w-full top-0 z-50">
+    <div class="container" style="padding: 0 12px;">
+      <nav class="nav">
+        <a href="index.html" class="flex items-center" style="display:flex; align-items:center; gap:8px;">
+          <img src="../images/logo.png" alt="شعار المنصة" style="height:40px;">
+          <span class="font-bold text-white" style="color:#fff; font-weight:700; font-size:16px;">بالقرآن نحيا</span>
+        </a>
+        <div>
+          <a href="index.html">الرئيسية</a>
+          <a href="about_me.html">المعلمون</a>
+          <a href="contact.html">تواصل معنا</a>
+          <a href="student_meetings.html">الاجتماعات</a>
+          <a href="list.html">التنبيهات</a>
+          <a href="message_list.html" style="position:relative; margin-inline-start:12px;">
+            <i class="ri-notification-3-line" style="color:#fff;"></i>
+            <span
+              style="position:absolute; top:-6px; right:-8px; background:#ef4444; color:#fff; font-size:10px; border-radius:999px; height:16px; width:16px; display:flex; align-items:center; justify-content:center;">3</span>
+          </a>
+          <a href="profile.html"
+            style="display:inline-flex; align-items:center; gap:8px; margin-inline-start:12px; text-decoration:none;">
+            <span style="display:block; width:32px; height:32px; overflow:hidden; border-radius:999px;">
+              <img src="../images/myphoto.png" alt="صورة المستخدم" style="width:100%; height:100%; object-fit:cover;">
+            </span>
+            <span style="color:#fff; font-size:14px;">اسم المستخدم</span>
+          </a>
         </div>
+      </nav>
     </div>
+  </header>
 
-</header>
-
-<main class="pt-16"></main>
-
-<!-- Main Content -->
-<main class="container mx-auto px-4 mt-20 pb-12">
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-
+  <main style="padding-top:72px;">
+    <section class="container" style="padding: 0 16px 48px;">
+      <div class="grid grid-4">
         <!-- Sidebar -->
-        <aside class="lg:col-span-1 space-y-6">
-            <div class="card card-hover text-center p-6" id="student-card">
-                <div class="bg-white p-6 rounded-lg shadow text-center">
+        <aside class="sidebar">
+          <div class="card card-hover" style="text-align:center;">
+            <img src="../images/myphoto.png" alt="صورة الطالب"
+              style="width:96px; height:96px; border-radius:999px; object-fit:cover; margin: 8px auto 12px;">
+            <h2 style="font-size:20px; font-weight:700; margin: 0 0 8px;">محمد أحمد</h2>
+            <div style="color:#6b7280; font-size:14px; margin-bottom:4px;">العمر: <span>12</span></div>
+            <div style="color:#6b7280; font-size:14px; margin-bottom:12px;">المدينة: <span>القاهرة</span></div>
 
-                    <img id="main-image"
-                        src="../images/myphoto.png"
-                        alt="صورة الطالب"
-                        class="w-24 h-24 rounded-full object-cover mx-auto">
-
-                    <h2 id="main-name" class="text-xl font-bold text-center mb-1">STUDENT_NAME</h2>
-
-                    <span class="text-gray-600">العمر:</span>
-                    <span id="main-age" class="text-gray-600 text-center mb-1">STUDENT_AGE</span>
-
-                    <span class="text-gray-600">المدينة:</span>
-                    <span id="main-city" class="text-gray-600 text-center mb-4">STUDENT_CITY</span>
-
-                    <div id="main-extra">
-                        <!-- سيتم ملؤه ديناميكيًا بالـ JavaScript -->
-                    </div>
-
-                    <!-- تعديل البيانات -->
-                    <div x-data="{ open: false }">
-
-                        <a href="#"
-                           @click.prevent="open = true"
-                           class="mt-4 inline-block bg-primary text-white px-4 py-2 rounded shadow hover:bg-primary/80">
-                            تعديل البيانات
-                        </a>
-
-                        <!-- Modal -->
-                        <div x-show="open" x-cloak
-                             class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-                             x-transition>
-                            <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
-                                <h3 class="text-lg font-bold mb-4">إدخال بيانات المستخدم</h3>
-
-                                <form id="profile-form" 
-                                     
-                                      enctype="multipart/form-data">
-
-                                    <label class="block mb-2">الصورة:</label>
-                                    <div class="flex items-center gap-4 mb-3">
-                                        <img id="image-preview"
-                                             src="../images/myphoto.png"
-                                             class="w-20 h-20 object-cover rounded-full border">
-                                        <input type="file" name="image" accept="image/*"
-                                               class="border rounded p-2 w-full"
-                                               onchange="previewImage(event)">
-                                    </div>
-
-                                    <label class="block mb-2">الاسم:</label>
-                                    <input type="text" name="name" id="input-name"
-                                           value="STUDENT_NAME"
-                                           class="w-full border rounded p-2 mb-3">
-
-                                    <label class="block mb-2">العمر:</label>
-                                    <input type="number" name="age" id="input-age"
-                                           value="STUDENT_AGE"
-                                           class="w-full border rounded p-2 mb-3">
-
-                                    <label class="block mb-2">المدينة:</label>
-                                    <input type="text" name="city" id="input-city"
-                                           value="STUDENT_CITY"
-                                           class="w-full border rounded p-2 mb-3">
-
-                                    <label class="block mb-2">المستوى الحالي:</label>
-                                    <input type="text" name="level" id="input-level"
-                                           value="STUDENT_LEVEL"
-                                           class="w-full border rounded p-2 mb-3">
-
-                                    <label class="block mb-2">السورة الحالية:</label>
-                                    <input type="text" name="current_surah" id="input-surah"
-                                           value="STUDENT_SURA"
-                                           class="w-full border rounded p-2 mb-3">
-
-                                    <label class="block mb-2">الجزء الحالي:</label>
-                                    <input type="number" name="current_juz" id="input-juz"
-                                           value="STUDENT_JUZ"
-                                           class="w-full border rounded p-2 mb-3">
-
-                                    <div class="flex justify-end gap-2 mt-4">
-                                        <button type="button" @click="open = false"
-                                                class="px-4 py-2 border rounded-lg">
-                                            إلغاء
-                                        </button>
-
-                                        <button type="submit" id="save-btn"
-                                                class="px-4 py-2 bg-primary text-white rounded-lg shadow flex items-center gap-2 hover:bg-primary/80 transition">
-                                            <span id="save-btn-text">💾 حفظ</span>
-                                            <span id="save-btn-loader"
-                                                  class="hidden animate-spin border-2 border-white border-t-transparent rounded-full w-4 h-4"></span>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
+            <div>
+              <div style="width:100%; border-top:1px solid #e5e7eb; margin: 12px 0;"></div>
+              <div style="display:grid; gap:8px;">
+                <div style="display:flex; justify-content:space-between;">
+                  <span class="badge">المستوى الحالي:</span>
+                  <span class="text-primary" style="font-weight:600;">متوسط</span>
                 </div>
-
-                <div id="alert-box"
-                     class="fixed top-5 right-5 z-50 hidden bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg">
+                <div style="display:flex; justify-content:space-between;">
+                  <span class="badge">السورة الحالية:</span>
+                  <span class="text-primary" style="font-weight:600;">الكهف</span>
                 </div>
-
-
+                <div style="display:flex; justify-content:space-between;">
+                  <span class="badge">الجزء الحالي:</span>
+                  <span class="text-primary" style="font-weight:600;">15</span>
+                </div>
+              </div>
             </div>
+
+            <a href="#edit-profile" class="btn" style="margin-top:12px; background:#1a3a30; color:#fff;">تعديل
+              البيانات</a>
+
+          </div>
         </aside>
-<!-- Evaluation -->
-<div class="bg-purple-50 rounded-lg p-4 card-hover">
-    <div class="flex items-center mb-2">
-        <i class="ri-award-line text-purple-600 ml-2"></i>
-        <h4 class="font-medium">التقييم</h4>
-    </div>
-    <span class="text-3xl font-bold text-purple-600">
-        STUDENT_RATING
-        <span class="text-sm text-gray-600 font-normal">من 5</span>
-    </span>
-</div>
-</div>
-</div>
-</div>
 
-<div class="mt-8">
-    <h3 class="text-lg font-bold mb-4">تقدم الحفظ الأسبوعي</h3>
-    <div id="weeklyLineChart"></div>
-</div>
-</div>
+        <!-- Main Content -->
+        <div class="content" style="display:flex; flex-direction:column; gap:24px;">
+          <!-- Progress Section -->
+          <div class="card card-hover">
+            <h2 style="font-size:18px; font-weight:700; margin-bottom:16px;">تقدمك في الحفظ</h2>
+            <div class="progress-wrap">
+              <div class="progress-row">
+                <!-- Progress Ring (ثابتة 65%) -->
+                <div
+                  style="flex:1; display:flex; justify-content:center; align-items:center; position:relative; min-height:200px;">
+                  <svg width="160" height="160" class="progress-ring">
+                    <circle stroke="#e6e6e6" stroke-width="10" fill="transparent" r="70" cx="80" cy="80" />
+                    <!-- circumference ≈ 439.82, 65% => offset ≈ 153.94 -->
+                    <circle stroke="#2E7D32" stroke-width="10" fill="transparent" r="70" cx="80" cy="80"
+                      style="stroke-dasharray:439.82; stroke-dashoffset:153.94;" />
+                  </svg>
+                  <div class="progress-center">
+                    <span style="font-size:28px; font-weight:700; color:#1a3a30;">65%</span>
+                    <span style="font-size:12px; color:#6b7280;">من الهدف</span>
+                  </div>
+                </div>
 
+                <!-- Stats Cards -->
+                <div style="flex:1;">
+                  <div class="stats-grid">
+                    <div style="background:#ecfdf5; border-radius:10px; padding:12px;" class="card-hover">
+                      <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                        <i class="ri-book-mark-line text-primary"></i>
+                        <h4 style="margin:0; font-size:14px;">الأجزاء المحفوظة</h4>
+                      </div>
+                      <span style="font-size:22px; font-weight:700; color:#1a3a30;">15 <span
+                          style="font-size:12px; color:#6b7280; font-weight:400;">من 30 جزء</span></span>
+                    </div>
 
-<!-- Lessons Section -->
-<div class="card card-hover">
-    <h2 class="text-xl font-bold mb-6">جدول الحصص والاجتماعات</h2>
+                    <div style="background:#eff6ff; border-radius:10px; padding:12px;" class="card-hover">
+                      <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                        <i class="ri-refresh-line" style="color:#2563eb;"></i>
+                        <h4 style="margin:0; font-size:14px;">المراجعات</h4>
+                      </div>
+                      <span style="font-size:22px; font-weight:700; color:#2563eb;">24 <span
+                          style="font-size:12px; color:#6b7280; font-weight:400;">مراجعة ناجحة</span></span>
+                    </div>
 
-    <div class="flex gap-2 mb-4">
-        <button id="show-upcoming" class="tab-button bg-primary text-white px-4 py-2 rounded-md">القادمة</button>
-        <button id="show-past" class="tab-button bg-gray-100 text-gray-700 px-4 py-2 rounded-md">السابقة</button>
-    </div>
+                    <div style="background:#fffbeb; border-radius:10px; padding:12px;" class="card-hover">
+                      <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                        <i class="ri-time-line" style="color:#ca8a04;"></i>
+                        <h4 style="margin:0; font-size:14px;">الالتزام</h4>
+                      </div>
+                      <span style="font-size:22px; font-weight:700; color:#ca8a04;">92% <span
+                          style="font-size:12px; color:#6b7280; font-weight:400;">معدل الحضور</span></span>
+                    </div>
 
-    <div class="overflow-x-auto">
-        <table class="table w-full" id="schedule-table">
-            <thead>
-                <tr>
+                    <div style="background:#f5f3ff; border-radius:10px; padding:12px;" class="card-hover">
+                      <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                        <i class="ri-award-line" style="color:#7c3aed;"></i>
+                        <h4 style="margin:0; font-size:14px;">التقييم</h4>
+                      </div>
+                      <span style="font-size:22px; font-weight:700; color:#7c3aed;">4.6 <span
+                          style="font-size:12px; color:#6b7280; font-weight:400;">من 5</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top:16px;">
+                <h3 style="font-size:16px; font-weight:700; margin-bottom:8px;">تقدم الحفظ الأسبوعي</h3>
+                <div class="card" style="text-align:center; color:#6b7280;">المخطط غير متاح .</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schedule -->
+          <div class="card card-hover">
+            <h2 style="font-size:18px; font-weight:700; margin-bottom:16px;">جدول الحصص والاجتماعات</h2>
+            <div style="overflow-x:auto;">
+              <table class="table">
+                <thead>
+                  <tr>
                     <th>العنوان</th>
                     <th>اليوم والتاريخ</th>
                     <th>الوقت</th>
                     <th>المعلم</th>
                     <th>الانضمام</th>
-                </tr>
-            </thead>
-            <tbody id="lessons-container">
-                <!-- سيتم تحميل الدروس ديناميكياً من API -->
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<!-- Evaluation Section -->
-<div class="card card-hover">
-    <h2 class="text-xl font-bold mb-6">التقييم والمتابعة</h2>
-
-    <!-- في حالة عدم وجود تقييم -->
-    <!-- احذف هذا السطر إذا عندك بيانات -->
-    <div class="bg-gray-50 rounded-lg p-6 mb-6">
-        <div class="flex items-start">
-            <img src="../images/yosufgamal.png" alt="صورة المعلم"
-                class="w-12 h-12 rounded-full ml-4">
-            <div>
-                <div class="flex items-center mb-2">
-                    <h4 class="font-medium">TEACHER_NAME</h4>
-                    <span class="mx-2 text-gray-400">•</span>
-                    <span class="text-gray-600 text-sm">EVAL_DATE</span>
-                </div>
-
-                <!-- التقييم بالنجوم -->
-                <div class="flex mb-3">
-                    <!-- املأ عدد النجوم ب JS ديناميكي -->
-                    <i class="ri-star-fill text-yellow-500 ml-1"></i>
-                    <i class="ri-star-fill text-yellow-500 ml-1"></i>
-                    <i class="ri-star-fill text-yellow-500 ml-1"></i>
-                    <i class="ri-star-fill text-gray-300 ml-1"></i>
-                    <i class="ri-star-fill text-gray-300 ml-1"></i>
-                </div>
-
-                <p class="text-gray-700">EVALUATION_COMMENT</p>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>مراجعة سورة الكهف</td>
+                    <td>السبت 2025-01-04</td>
+                    <td>06:30 م</td>
+                    <td>
+                      <span style="display:flex; align-items:center; gap:8px;">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="صورة المعلم"
+                          style="width:32px; height:32px; border-radius:999px; object-fit:cover;">
+                        <span>أ. خالد</span>
+                      </span>
+                    </td>
+                    <td><a href="#" class="btn btn-primary">الانضمام</a></td>
+                  </tr>
+                  <tr>
+                    <td>تثبيت جزء عم</td>
+                    <td>الخميس 2025-01-09</td>
+                    <td>07:00 م</td>
+                    <td>
+                      <span style="display:flex; align-items:center; gap:8px;">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="صورة المعلم"
+                          style="width:32px; height:32px; border-radius:999px; object-fit:cover;">
+                        <span>أ. مريم</span>
+                      </span>
+                    </td>
+                    <td><span style="color:#9ca3af;">لا يوجد رابط</span></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-        </div>
+          </div>
 
-        <!-- تفاصيل التقييم -->
-        <div class="mt-6 pt-6 border-t border-gray-200">
-            <h5 class="font-medium mb-4">تفاصيل التقييم:</h5>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- تكرار سيكشن التفاصيل -->
+          <!-- Evaluation -->
+          <div class="card card-hover">
+            <h2 style="font-size:18px; font-weight:700; margin-bottom:16px;">التقييم والمتابعة</h2>
+            <div style="background:#f9fafb; border-radius:10px; padding:16px; margin-bottom:16px;">
+              <div style="display:flex; align-items:flex-start; gap:12px;">
+                <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="صورة المعلم"
+                  style="width:48px; height:48px; border-radius:999px; object-fit:cover;">
                 <div>
-                    <!-- عنصر تقييم -->
-                    <div class="flex justify-between items-center mb-3">
-                        <span class="text-gray-600">ITEM_LABEL</span>
-                        <div class="flex">
-                            <i class="ri-star-fill text-sm text-yellow-500 ml-1"></i>
-                            <i class="ri-star-fill text-sm text-yellow-500 ml-1"></i>
-                            <i class="ri-star-fill text-sm text-yellow-500 ml-1"></i>
-                            <i class="ri-star-fill text-sm text-gray-300 ml-1"></i>
-                            <i class="ri-star-fill text-sm text-gray-300 ml-1"></i>
-                        </div>
+                  <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                    <h4 style="margin:0;">أ. خالد</h4>
+                    <span style="color:#9ca3af;">•</span>
+                    <span style="color:#6b7280; font-size:13px;">2025-01-02</span>
+                  </div>
+                  <div style="display:flex; gap:4px; margin-bottom:8px; color:#f59e0b;">
+                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                      class="ri-star-fill"></i><i class="ri-star-line" style="color:#d1d5db;"></i>
+                  </div>
+                  <p style="margin:0; color:#374151;">مستوى جيد جداً، يحتاج إلى تثبيت أول وجهين.</p>
+                </div>
+              </div>
+              <div style="margin-top:16px; padding-top:16px; border-top:1px solid #e5e7eb;">
+                <h5 style="margin:0 0 12px; font-weight:600;">تفاصيل التقييم:</h5>
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+                  <div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                      <span class="badge">التجويد</span>
+                      <span style="color:#f59e0b;">★★★★☆</span>
                     </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                      <span class="badge">الحفظ</span>
+                      <span style="color:#f59e0b;">★★★★★</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                      <span class="badge">التركيز</span>
+                      <span style="color:#f59e0b;">★★★★☆</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                      <span class="badge">المتابعة</span>
+                      <span style="color:#f59e0b;">★★★★☆</span>
+                    </div>
+                  </div>
                 </div>
-                <!-- نهاية سيكشن -->
+              </div>
             </div>
-        </div>
-    </div>
 
+            <div style="background:#f9fafb; border-radius:10px; padding:16px;">
+              <h3 style="font-size:16px; font-weight:600; margin-bottom:12px;">خطة المراجعة اليومية</h3>
 
-    <!-- Plans Section -->
-    <div class="bg-gray-50 rounded-lg p-6">
-        <h3 class="text-lg font-medium mb-4">خطة المراجعة اليومية</h3>
-
-        <!-- تكرار الخطة -->
-        <div class="plan-card">
-
-            <p>PLAN_TITLE</p>
-            <p>PLAN_DESCRIPTION</p>
-
-            <p>اليوم: PLAN_DAY</p>
-            <p>السورة: PLAN_SURAH</p>
-            <p>عدد الآيات: PLAN_AYAT</p>
-
-            <div class="toggle-container">
-                <label class="toggle-switch">
-                    <input type="checkbox" class="reminder-toggle" data-id="PLAN_ID">
+              <div class="plan-card"
+                style="text-align:right; margin-bottom:18px; padding:12px; border:1px solid #e5e7eb; border-radius:10px; background:#fff;">
+                <p style="margin:4px 0;">مراجعة جزء عم</p>
+                <p style="margin:4px 0;">مراجعة يومية لمدة 30 دقيقة</p>
+                <p style="margin:4px 0;">اليوم: السبت</p>
+                <p style="margin:4px 0;">السورة: النبأ</p>
+                <p style="margin:4px 0;">عدد الآيات: 40</p>
+                <div style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked>
                     <span class="slider"></span>
-                </label>
-                <span class="toggle-label">تفعيل التذكير اليومي</span>
-            </div>
-
-            <div class="toggle-container">
-                <label class="toggle-switch">
-                    <input type="checkbox" class="completed-toggle" data-id="PLAN_ID">
+                  </label>
+                  <span>تفعيل التذكير اليومي</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+                  <label class="toggle-switch">
+                    <input type="checkbox">
                     <span class="slider"></span>
-                </label>
-                <span class="toggle-label">تحديد الخطة كمكتملة</span>
+                  </label>
+                  <span>تحديد الخطة كمكتملة</span>
+                </div>
+              </div>
+
+              <div class="plan-card"
+                style="text-align:right; margin-bottom:0; padding:12px; border:1px solid #e5e7eb; border-radius:10px; background:#fff;">
+                <p style="margin:4px 0;">تثبيت سورة الكهف</p>
+                <p style="margin:4px 0;">قراءة مع تدبر</p>
+                <p style="margin:4px 0;">اليوم: الخميس</p>
+                <p style="margin:4px 0;">السورة: الكهف</p>
+                <p style="margin:4px 0;">عدد الآيات: 110</p>
+                <div style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+                  <label class="toggle-switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                  <span>تفعيل التذكير اليومي</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                  </label>
+                  <span>تحديد الخطة كمكتملة</span>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
-        <!-- في حالة عدم وجود خطط -->
-        <!-- <p>لا توجد خطط مراجعة مرتبطة بك حالياً.</p> -->
-    </div>
-</div>
-
-
-<!-- Notifications + Toggles Scripts -->
-
-
-<!-- Subscription Status -->
-<div class="card card-hover">
-    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
-        <h2 class="text-xl font-bold">حالة الاشتراك</h2>
-        <div class="flex items-center mt-2 md:mt-0">
-            <span class="text-gray-600 ml-2">الحالة:</span>
-            <span class="status-badge status-active">نشط</span>
-        </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-
-        <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-bold mb-4">تفاصيل الاشتراك</h3>
-
-            <div class="space-y-3">
-                <div class="flex justify-between">
-                    <span class="text-gray-600">نوع الاشتراك:</span>
-                    <span class="font-medium text-primary">SUBSCRIPTION_TYPE</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-gray-600">بداية الاشتراك:</span>
-                    <span>SUBS_START_DATE</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-gray-600">تاريخ الانتهاء:</span>
-                    <span>SUBS_END_DATE</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-gray-600">الحالة:</span>
-                    <span class="text-green-600">SUBSCRIPTION_STATUS</span>
-                </div>
+          <!-- Subscription -->
+          <div class="card card-hover">
+            <div
+              style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:16px;">
+              <h2 style="font-size:18px; font-weight:700; margin:0;">حالة الاشتراك</h2>
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span class="badge">الحالة:</span>
+                <span class="status-badge status-active">نشط</span>
+              </div>
             </div>
 
-        </div>
+            <div style="display:grid; grid-template-columns: 1fr; gap:16px; margin-bottom:20px;">
+              <div style="background:#f9fafb; border-radius:10px; padding:16px;">
+                <h3 style="font-size:16px; font-weight:700; margin-bottom:10px;">تفاصيل الاشتراك</h3>
+                <div style="display:grid; gap:8px;">
+                  <div style="display:flex; justify-content:space-between;">
+                    <span class="badge">نوع الاشتراك:</span>
+                    <span style="font-weight:600; color:#1a3a30;">اشتراك شهري</span>
+                  </div>
+                  <div style="display:flex; justify-content:space-between;">
+                    <span class="badge">بداية الاشتراك:</span>
+                    <span>2025-01-01</span>
+                  </div>
+                  <div style="display:flex; justify-content:space-between;">
+                    <span class="badge">تاريخ الانتهاء:</span>
+                    <span>2025-01-31</span>
+                  </div>
+                  <div style="display:flex; justify-content:space-between;">
+                    <span class="badge">الحالة:</span>
+                    <span style="color:#0f7b3e;">نشط</span>
+                  </div>
+                </div>
+              </div>
 
-    </div>
-</div>
-<!-- Subscription Features -->
-<div class="bg-gray-50 rounded-lg p-6">
-    <h3 class="text-lg font-bold mb-4">مميزات الباقة الحالية</h3>
-    <ul class="space-y-3">
-        <li class="flex items-center">
-            <i class="ri-checkbox-circle-fill text-primary ml-2"></i>
-            <span>حصص مباشرة أسبوعية</span>
-        </li>
-        <li class="flex items-center">
-            <i class="ri-checkbox-circle-fill text-primary ml-2"></i>
-            <span>متابعة أسبوعية مع المعلم</span>
-        </li>
-        <li class="flex items-center">
-            <i class="ri-checkbox-circle-fill text-primary ml-2"></i>
-            <span>تصحيح التلاوة</span>
-        </li>
-    </ul>
-</div>
+              <div style="background:#f9fafb; border-radius:10px; padding:16px;">
+                <h3 style="font-size:16px; font-weight:700; margin-bottom:10px;">مميزات الباقة الحالية</h3>
+                <ul style="margin:0; padding:0 18px; display:grid; gap:6px;">
+                  <li>حصص مباشرة أسبوعية</li>
+                  <li>متابعة أسبوعية مع المعلم</li>
+                  <li>تصحيح التلاوة</li>
+                </ul>
+              </div>
+            </div>
 
-<!-- سجل المدفوعات -->
-    <div class="bg-gray-50 rounded-lg p-6 mt-6">
-    <div class="flex justify-between items-center mb-4">
-        <h3 class="text-lg font-bold">سجل المدفوعات</h3>
-        <a href="subscription_history.html" class="text-primary hover:underline text-sm">عرض السجل الكامل</a>
-    </div>
+            <div style="background:#f9fafb; border-radius:10px; padding:16px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <h3 style="font-size:16px; font-weight:700; margin:0;">سجل المدفوعات</h3>
+<a href="#" class="btn btn-primary">تصدير السجل</a>              </div>
 
-    <!-- آخر اشتراك -->
-    <div class="bg-gray-50 rounded-lg p-6 mt-6">
-        <div class="flex justify-between items-center cursor-pointer"
-             onclick="document.getElementById('all-subscriptions').classList.toggle('hidden'); 
-                      this.querySelector('svg').classList.toggle('rotate-180');">
-            <h3 class="text-lg font-bold">📌 آخر اشتراك</h3>
-            <svg class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" stroke-width="2"
-                 viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-        </div>
-
-        <div class="p-4 border rounded-lg bg-white shadow flex flex-wrap gap-6 mt-4">
-            <p><strong>الخطة:</strong> PLAN_NAME</p>
-            <p><strong>المبلغ:</strong> PLAN_PRICE جنيه</p>
-            <p><strong>الحالة:</strong> PLAN_STATUS</p>
-            <p><strong>تاريخ البداية:</strong> PLAN_START_DATE</p>
-            <p><strong>تاريخ الانتهاء:</strong> PLAN_END_DATE</p>
-            <p><strong>الإيصال:</strong> 
-                <a href="PAYMENT_IMAGE_URL" target="_blank" class="text-primary hover:underline">عرض الإيصال</a>
-                <img src="PAYMENT_IMAGE_URL" alt="إيصال الدفع" class="w-20 h-20 object-cover rounded border mt-2">
-            </p>
-        </div>
-
-        <!-- باقي الاشتراكات -->
-        <div id="all-subscriptions" class="hidden mt-6 space-y-4">
-            <div class="p-4 border rounded-lg bg-white shadow flex flex-wrap gap-6">
-                <p><strong>الخطة:</strong> SUB_PLAN_NAME</p>
-                <p><strong>المبلغ:</strong> SUB_PLAN_PRICE جنيه</p>
-                <p><strong>الحالة:</strong> SUB_PLAN_STATUS</p>
-                <p><strong>تاريخ البداية:</strong> SUB_PLAN_START_DATE</p>
-                <p><strong>تاريخ الانتهاء:</strong> SUB_PLAN_END_DATE</p>
-                <p><strong>الإيصال:</strong> 
-                    <a href="SUB_PAYMENT_IMAGE_URL" target="_blank" class="text-primary hover:underline">عرض الإيصال</a>
+              <div
+                style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin-top:12px; display:flex; flex-wrap:wrap; gap:16px;">
+                <p style="margin:0;"><strong>الخطة:</strong> الباقة الذهبية</p>
+                <p style="margin:0;"><strong>المبلغ:</strong> 150 جنيه</p>
+                <p style="margin:0;"><strong>الحالة:</strong> مدفوع</p>
+                <p style="margin:0;"><strong>تاريخ البداية:</strong> 2025-01-01</p>
+                <p style="margin:0;"><strong>تاريخ الانتهاء:</strong> 2025-01-31</p>
+                <p style="margin:0;">
+                  <strong>الإيصال:</strong>
+                  <a href="#" class="text-primary" style="color:#1a3a30; text-decoration:underline;">عرض الإيصال</a>
+                  <br>
+                  <img src="https://via.placeholder.com/80" alt="إيصال الدفع"
+                    style="width:80px; height:80px; object-fit:cover; border-radius:6px; border:1px solid #e5e7eb; margin-top:6px;">
                 </p>
+              </div>
+
+              <div style="margin-top:16px; display:grid; gap:12px;">
+                <div
+                  style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; display:flex; flex-wrap:wrap; gap:16px;">
+                  <p style="margin:0;"><strong>الخطة:</strong> الباقة الفضية</p>
+                  <p style="margin:0;"><strong>المبلغ:</strong> 120 جنيه</p>
+                  <p style="margin:0;"><strong>الحالة:</strong> منتهي</p>
+                  <p style="margin:0;"><strong>تاريخ البداية:</strong> 2024-12-01</p>
+                  <p style="margin:0;"><strong>تاريخ الانتهاء:</strong> 2024-12-31</p>
+                  <p style="margin:0;"><strong>الإيصال:</strong> لا يوجد</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    جميع الحقوق محفوظة © منصة القرآن الكريم 2025
+  </footer>
+
+  <!-- فورم تحديث البيانات - يظهر عبر :target ويُرسل بطريقة GET -->
+  <div id="edit-profile">
+    <div class="modal-overlay">
+      <div class="modal-card" style="text-align:right;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+          <h3 style="margin:0; font-size:16px; font-weight:700;">تحديث البيانات</h3>
+          <a href="#" style="text-decoration:none; font-size:20px; line-height:1; color:#6b7280;">×</a>
+        </div>
+        <form id="profile-form" method="get" action="#" enctype="multipart/form-data">
+          <label class="block mb-2" style="display:block; margin-bottom:6px;">الصورة:</label>
+          <div class="flex items-center gap-4 mb-3"
+            style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+            <img id="image-preview" src="../images/myphoto.png" class="w-20 h-20 object-cover rounded-full border"
+              alt="صورة الطالب"
+              style="width:80px; height:80px; object-fit:cover; border-radius:999px; border:1px solid #e5e7eb;">
+            <input type="file" name="image" accept="image/*" class="border rounded p-2 w-full"
+              style="flex:1; border:1px solid #e5e7eb; border-radius:8px; padding:8px;">
+          </div>
+
+          <label class="block mb-2" style="display:block; margin-bottom:6px;">الاسم:</label>
+          <input type="text" name="name" id="input-name" value="محمد أحمد" class="w-full border rounded p-2 mb-3"
+            style="width:100%; border:1px solid #e5e7eb; border-radius:8px; padding:8px; margin-bottom:10px;">
+
+          <label class="block mb-2" style="display:block; margin-bottom:6px;">العمر:</label>
+          <input type="number" name="age" id="input-age" value="12" class="w-full border rounded p-2 mb-3"
+            style="width:100%; border:1px solid #e5e7eb; border-radius:8px; padding:8px; margin-bottom:10px;">
+
+          <label class="block mb-2" style="display:block; margin-bottom:6px;">المدينة:</label>
+          <input type="text" name="city" id="input-city" value="القاهرة" class="w-full border rounded p-2 mb-3"
+            style="width:100%; border:1px solid #e5e7eb; border-radius:8px; padding:8px; margin-bottom:10px;">
+
+          <label class="block mb-2" style="display:block; margin-bottom:6px;">المستوى الحالي:</label>
+          <input type="text" name="level" id="input-level" value="متوسط" class="w-full border rounded p-2 mb-3"
+            style="width:100%; border:1px solid #e5e7eb; border-radius:8px; padding:8px; margin-bottom:10px;">
+
+          <label class="block mb-2" style="display:block; margin-bottom:6px;">السورة الحالية:</label>
+          <input type="text" name="current_surah" id="input-surah" value="الكهف" class="w-full border rounded p-2 mb-3"
+            style="width:100%; border:1px solid #e5e7eb; border-radius:8px; padding:8px; margin-bottom:10px;">
+
+          <label class="block mb-2" style="display:block; margin-bottom:6px;">الجزء الحالي:</label>
+          <input type="number" name="current_juz" id="input-juz" value="15" class="w-full border rounded p-2 mb-3"
+            style="width:100%; border:1px solid #e5e7eb; border-radius:8px; padding:8px; margin-bottom:10px;">
+
+          <div class="modal-actions">
+            <a href="#" class="px-4 py-2 border rounded-lg"
+              style="padding:8px 12px; border:1px solid #e5e7eb; border-radius:8px; background:#fff; text-decoration:none; color:#374151;">إلغاء</a>
+            <button type="submit" id="save-btn" class="px-4 py-2 bg-primary text-white rounded-lg"
+              style="padding:8px 12px; border-radius:8px; background:#1a3a30; color:#fff;">💾 حفظ</button>
+          </div>
+        </form>
+      </div>
     </div>
-</div>
+  </div>
+</body>
 
-<!-- Footer -->
-<footer class="bg-white border-t py-4 text-center text-gray-500 text-sm">
-    جميع الحقوق محفوظة &copy; منصة القرآن الكريم 2025
-</footer>
-
-<!-- External JavaScript -->
-<!-- Note: JavaScript functionality should be moved to a separate JS file if needed -->
+</html>

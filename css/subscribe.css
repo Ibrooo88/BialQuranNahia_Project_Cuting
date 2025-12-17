@@ -55,7 +55,6 @@ body {
     display: inline-block;
 }
 
-/* Navbar styles */
 .navbar {
     background-color: #1a3a30 !important;
 }
@@ -65,7 +64,6 @@ body {
     margin-left: 15px;
 }
 
-/* Preview image */
 #preview-img {
     display: none;
 }

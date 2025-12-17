@@ -8,7 +8,6 @@
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,6 @@ body {
     line-height: 1.6;
 }
 
-/* Card Styles */
 .card {
     background: var(--white);
     border-radius: 8px;
@@ -35,7 +33,6 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Button Styles */
 .btn {
     display: inline-block;
     padding: 0.5rem 1.5rem;
@@ -57,7 +54,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Form Elements */
 input, select, textarea {
     width: 100%;
     padding: 0.75rem;
@@ -73,7 +69,6 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0 0 0 2px rgba(26, 58, 48, 0.2);
 }
 
-/* Layout */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -81,7 +76,6 @@ input:focus, select:focus, textarea:focus {
     padding: 0 1rem;
 }
 
-/* Header Styles */
 header {
     background-color: var(--primary-color);
     color: white;
@@ -89,7 +83,6 @@ header {
     border-bottom: 2px solid var(--secondary-color);
 }
 
-/* Navigation */
 .nav-link {
     color: white;
     text-decoration: none;
@@ -101,7 +94,6 @@ header {
     color: var(--secondary-color);
 }
 
-/* Dashboard Layout */
 .dashboard-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -116,7 +108,6 @@ header {
     }
 }
 
-/* Sidebar */
 .sidebar {
     background: white;
     border-radius: 8px;
@@ -124,7 +115,6 @@ header {
     box-shadow: var(--shadow);
 }
 
-/* Main Content */
 .main-content {
     background: white;
     border-radius: 8px;
@@ -132,7 +122,6 @@ header {
     box-shadow: var(--shadow);
 }
 
-/* Utility Classes */
 .text-primary {
     color: var(--primary-color);
 }
