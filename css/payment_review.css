@@ -43,4 +43,15 @@ body {
 .hidden-block.show {
     display: block;
 }
+body,
+.center-box,
+.timer,
+p,
+span,
+div {
+    cursor: default;
+}
+.btn-main {
+    cursor: pointer;
+}
 

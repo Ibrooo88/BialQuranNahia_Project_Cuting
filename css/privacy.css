@@ -93,4 +93,19 @@ li {
         font-size: 1.4em;
     }
 }
+body,
+.container,
+header,
+h1, h2, h3, h4, h5, h6,
+p,
+ul,
+li,
+span,
+div {
+    cursor: default;
+}
+a,
+.contact-email {
+    cursor: pointer;
+}
 

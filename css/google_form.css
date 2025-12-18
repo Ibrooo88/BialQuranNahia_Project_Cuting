@@ -89,3 +89,9 @@ iframe {
     border-radius: 10px;
 }
 
+h2, span, p, div , label ,iframe{
+    cursor: default;
+}
+a, button, .btn {
+    cursor: pointer;
+}

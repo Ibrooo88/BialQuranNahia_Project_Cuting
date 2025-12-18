@@ -112,3 +112,22 @@ body {
 .footer-copyright {
     color: #8a9e94;
 }
+body,
+p,
+span,
+div,
+h1, h2, h3, h4, h5, h6,
+li {
+    cursor: default;
+}
+a,
+button,
+.btn,
+.nav-link {
+    cursor: pointer;
+}
+.future-link {
+    opacity: 0.75;
+    pointer-events: none;
+    cursor: not-allowed;
+}

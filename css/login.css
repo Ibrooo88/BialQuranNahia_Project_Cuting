@@ -105,4 +105,19 @@ body {
 body {
     overflow-x: hidden;
 }
+body,
+p,
+span,
+h1, h2, h3, h4, h5, h6,
+.login-left,
+.login-right,
+.login-right-content {
+    cursor: default;
+}
+button,
+.btn,
+.btn-primary,
+a {
+    cursor: pointer;
+}
 

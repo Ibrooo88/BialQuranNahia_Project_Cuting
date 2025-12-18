@@ -71,4 +71,29 @@ body {
 #preview-img.show {
     display: block;
 }
+.appointment-btn,
+button,
+a {
+    cursor: pointer;
+}
+
+.appointment-btn.booked {
+    cursor: not-allowed;
+}
+
+p,
+h1, h2, h3, h4, h5, h6,
+li,
+ul,
+
+span,
+label,
+.text-danger {
+    cursor: default;
+}
+
+input,
+textarea {
+    cursor: text;
+}
 

@@ -329,4 +329,24 @@ textarea.form-control {
         width: 100%; 
     }
 }
+body,
+p,
+span,
+div,
+h1, h2, h3, h4, h5, h6,
+.message-body,
+.message-content,
+.message-meta,
+.thread-body,
+.thread-header,
+.site-footer {
+    cursor: default;
+}
+a,
+button,
+.btn,
+.nav-link,
+.action-buttons button {
+    cursor: pointer;
+}
 

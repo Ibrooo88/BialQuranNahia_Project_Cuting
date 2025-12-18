@@ -254,4 +254,7 @@ h1 {
     border-radius: 30px;
     transition: var(--transition);
 }
+p, h1, h2, h3, h4, h5, h6 {
+    cursor: default;
+}
 

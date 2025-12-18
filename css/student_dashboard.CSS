@@ -337,4 +337,28 @@
       gap: 10px;
       margin-top: 12px;
     }
-  
+a,
+.btn,
+button,
+[role="button"],
+.toggle-switch,
+.slider {
+  cursor: pointer;
+}
+
+p,
+h1, h2, h3, h4, h5, h6,
+span,
+small,
+strong,
+.badge,
+.status-badge,
+.table th,
+.table td {
+  cursor: default;
+}
+
+input,
+textarea {
+  cursor: text;
+}

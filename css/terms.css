@@ -89,4 +89,18 @@ li {
         font-size: 1.4em;
     }
 }
+a,
+button,
+[role="button"] {
+    cursor: pointer;
+}
+
+p,
+h1, h2, h3, h4, h5, h6,
+span,
+li,
+ul,
+ol {
+    cursor: default;
+}
 

@@ -137,4 +137,18 @@ body {
         margin-bottom: 10px;
     }
 }
+body,
+p,
+span,
+div,
+h1, h2, h3, h4, h5, h6,
+.message-title,
+.message-preview,
+.message-meta,
+.empty-state {
+    cursor: default;
+}
+.message-card {
+    cursor: pointer;
+}
 
