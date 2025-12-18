@@ -1,43 +1,49 @@
-body { 
-    background: #a99d94; 
-    font-family: 'Tajawal', Arial, sans-serif; 
+body {
+    background: #a99d94;
+    font-family: 'Tajawal', Arial, sans-serif;
 }
 
-.navbar-custom { 
-    background-color: #1a3a30 !important; 
-    border-bottom: 2px solid #c9b67a; 
+.navbar-custom {
+    background-color: #1a3a30 !important;
+    border-bottom: 2px solid #c9b67a;
 }
 
-.navbar-brand { 
-    font-weight: bold; 
-    color: #fff !important; 
-    font-family: 'Tajawal', Arial, sans-serif; 
-    font-size: 1.5rem; 
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+    font-family: 'Tajawal', Arial, sans-serif;
+    font-size: 1.5rem;
 }
 
-.navbar-logo { 
-    height: 38px; 
-    margin-left: 10px; 
+.navbar-logo {
+    height: 38px;
+    margin-left: 10px;
 }
 
-.payment-section { 
-    background: rgba(255,255,255,0.15); 
-    border-radius: 12px; 
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06); 
-    padding: 32px 24px 24px 24px; 
-    margin: 80px auto 0 auto; 
-    max-width: 500px; 
+.payment-section {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 32px 24px 24px 24px;
+    margin: 80px auto 0 auto;
+    max-width: 500px;
 }
+
 body,
 .payment-section,
 p,
 span,
 div,
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     cursor: default;
 }
+
 a,
 .navbar-brand {
     cursor: pointer;
 }
-

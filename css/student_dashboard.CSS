@@ -1,342 +1,343 @@
+body {
+  font-family: 'Tajawal', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
 
-    body {
-      font-family: 'Tajawal', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+}
 
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-      padding: 16px;
-    }
+.card-hover {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
 
-    .card-hover {
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
 
-    .card-hover:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-    }
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+.text-primary {
+  color: #1a3a30;
+}
 
-    .text-primary {
-      color: #1a3a30;
-    }
+.bg-primary {
+  background-color: #1a3a30;
+}
 
-    .bg-primary {
-      background-color: #1a3a30;
-    }
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
 
-    .status-badge {
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-    }
+.status-active {
+  background: #e6ffed;
+  color: #0f7b3e;
+}
 
-    .status-active {
-      background: #e6ffed;
-      color: #0f7b3e;
-    }
+/* منع ظهور مؤشر الكتابة وإلغاء تحديد النص على مستوى الصفحة */
+html,
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
 
-    /* منع ظهور مؤشر الكتابة وإلغاء تحديد النص على مستوى الصفحة */
-    html,
-    body {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      cursor: default;
-    }
+/* إبقاء مؤشر اليد للعناصر التفاعلية */
+a,
+.btn,
+button,
+[role="button"],
+label {
+  cursor: pointer;
+}
 
-    /* إبقاء مؤشر اليد للعناصر التفاعلية */
-    a,
-    .btn,
-    button,
-    [role="button"],
-    label {
-      cursor: pointer;
-    }
+/* في حال وجود حقول إدخال لاحقاً */
+input,
+textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: text;
+}
 
-    /* في حال وجود حقول إدخال لاحقاً */
-    input,
-    textarea {
-      -webkit-user-select: text;
-      -moz-user-select: text;
-      -ms-user-select: text;
-      user-select: text;
-      cursor: text;
-    }
+/* منع ظهور رموز غريبة بسبب خطوط الأيقونات أو عناصر فارغة */
+i {
+  font-style: normal;
+}
 
-    /* منع ظهور رموز غريبة بسبب خطوط الأيقونات أو عناصر فارغة */
-    i {
-      font-style: normal;
-    }
+i:not([class^="ri-"]):not([class*=" ri-"]) {
+  font-family: inherit !important;
+  font-weight: inherit;
+}
 
-    i:not([class^="ri-"]):not([class*=" ri-"]) {
-      font-family: inherit !important;
-      font-weight: inherit;
-    }
+.badge:empty,
+.status-badge:empty,
+a>span:empty {
+  display: none;
+}
 
-    .badge:empty,
-    .status-badge:empty,
-    a>span:empty {
-      display: none;
-    }
+/* منع أي محتوى before/after غير مقصود من الظهور */
+*::before,
+*::after {
+  unicode-bidi: isolate;
+}
 
-    /* منع أي محتوى before/after غير مقصود من الظهور */
-    *::before,
-    *::after {
-      unicode-bidi: isolate;
-    }
+/* حماية عناوين الأقسام من أيقونات/شارات عارضة */
+h2 {
+  font-family: 'Tajawal', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+}
 
-    /* حماية عناوين الأقسام من أيقونات/شارات عارضة */
-    h2 {
-      font-family: 'Tajawal', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
-    }
+h2 i,
+h2 .badge,
+h2 .status-badge {
+  display: none !important;
+}
 
-    h2 i,
-    h2 .badge,
-    h2 .status-badge {
-      display: none !important;
-    }
+h2 span:empty,
+h2 i:empty {
+  display: none !important;
+}
 
-    h2 span:empty,
-    h2 i:empty {
-      display: none !important;
-    }
+/* من الكود الأصلي */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
-    /* من الكود الأصلي */
-    .toggle-switch {
-      position: relative;
-      display: inline-block;
-      width: 60px;
-      height: 34px;
-    }
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-    .toggle-switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
 
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      transition: .4s;
-      border-radius: 34px;
-    }
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      transition: .4s;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
+input:checked+.slider {
+  background-color: #2196F3;
+}
 
-    input:checked+.slider {
-      background-color: #2196F3;
-    }
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
 
-    input:checked+.slider:before {
-      transform: translateX(26px);
-    }
+.popup-notif {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2c3e50;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
 
-    .popup-notif {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #2c3e50;
-      color: #fff;
-      padding: 15px 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      z-index: 9999;
-    }
+header {
+  background-color: #1a3a30;
+  border-bottom: 2px solid #c9b67a;
+}
 
-    header {
-      background-color: #1a3a30;
-      border-bottom: 2px solid #c9b67a;
-    }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
 
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 0;
-    }
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-inline: 8px;
+  font-size: 14px;
+}
 
-    .nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-inline: 8px;
-      font-size: 14px;
-    }
+/* شبكة عامة بسيطة بدلاً من Tailwind */
+.grid {
+  display: grid;
+  gap: 24px;
+}
 
-    /* شبكة عامة بسيطة بدلاً من Tailwind */
-    .grid {
-      display: grid;
-      gap: 24px;
-    }
+.grid-4 {
+  grid-template-columns: 1fr;
+}
 
-    .grid-4 {
-      grid-template-columns: 1fr;
-    }
+@media (min-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
-    @media (min-width: 1024px) {
-      .grid-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
+.sidebar {
+  grid-column: span 1;
+}
 
-    .sidebar {
-      grid-column: span 1;
-    }
+.content {
+  grid-column: span 3;
+}
 
-    .content {
-      grid-column: span 3;
-    }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-    .table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+.table th,
+.table td {
+  border-bottom: 1px solid #eee;
+  text-align: right;
+  padding: 10px;
+  font-size: 14px;
+}
 
-    .table th,
-    .table td {
-      border-bottom: 1px solid #eee;
-      text-align: right;
-      padding: 10px;
-      font-size: 14px;
-    }
+.btn {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 13px;
-    }
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
 
-    .btn-primary {
-      background: #2563eb;
-      color: #fff;
-    }
+.btn-gray {
+  background: #6b7280;
+  color: #fff;
+}
 
-    .btn-gray {
-      background: #6b7280;
-      color: #fff;
-    }
+.progress-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    .progress-wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+@media (min-width: 768px) {
+  .progress-row {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+  }
+}
 
-    @media (min-width: 768px) {
-      .progress-row {
-        display: flex;
-        gap: 16px;
-        align-items: stretch;
-      }
-    }
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
 
-    .stats-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    @media (min-width: 768px) {
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+.badge {
+  font-size: 12px;
+  color: #6b7280;
+}
 
-    .badge {
-      font-size: 12px;
-      color: #6b7280;
-    }
+/* دائرة التقدم بإعدادات ثابتة (65%) */
+.progress-ring {
+  transform: rotate(-90deg);
+}
 
-    /* دائرة التقدم بإعدادات ثابتة (65%) */
-    .progress-ring {
-      transform: rotate(-90deg);
-    }
+.progress-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    .progress-center {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
 
-    footer {
-      background: #fff;
-      border-top: 1px solid #eee;
-      padding: 16px;
-      text-align: center;
-      color: #6b7280;
-      font-size: 14px;
-    }
+/* عرض الفورم عند الضغط على زر تعديل باستخدام :target بدون JS */
+#edit-profile {
+  display: none;
+}
 
-    /* عرض الفورم عند الضغط على زر تعديل باستخدام :target بدون JS */
-    #edit-profile {
-      display: none;
-    }
+#edit-profile:target {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+}
 
-    #edit-profile:target {
-      display: block;
-      position: fixed;
-      inset: 0;
-      z-index: 50;
-    }
+/* نمط المودال كلوحة جانبية مثبتة على يمين الشاشة */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .4);
+  display: flex;
+  align-items: center;
+  /* توسيط عمودي */
+  justify-content: center;
+  z-index: 50;
+}
 
-    /* نمط المودال كلوحة جانبية مثبتة على يمين الشاشة */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, .4);
-      display: flex;
-      align-items: center;      /* توسيط عمودي */
-  justify-content: center; 
-      z-index: 50;
-    }
+.modal-card {
+  background: #fff;
+  border-radius: 0;
+  padding: 16px;
+  width: 380px;
+  max-width: 90vw;
+  height: 100vh;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, .18);
+  overflow: auto;
+}
 
-    .modal-card {
-      background: #fff;
-      border-radius: 0;
-      padding: 16px;
-      width: 380px;
-      max-width: 90vw;
-      height: 100vh;
-      box-shadow: -4px 0 16px rgba(0, 0, 0, .18);
-      overflow: auto;
-    }
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
 
-    .modal-actions {
-      display: flex;
-      justify-content: flex-end;
-      gap: 10px;
-      margin-top: 12px;
-    }
 a,
 .btn,
 button,
@@ -347,7 +348,12 @@ button,
 }
 
 p,
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 span,
 small,
 strong,

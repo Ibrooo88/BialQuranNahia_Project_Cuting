@@ -1,36 +1,37 @@
-body { 
-    font-family: 'Tajawal', Arial, sans-serif; 
+body {
+    font-family: 'Tajawal', Arial, sans-serif;
 }
 
-.login-container { 
+.login-container {
     min-height: calc(100vh - 200px);
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 2rem 0;
 }
 
-.login-box { 
-    background: #fff; 
-    border-radius: 10px; 
-    overflow: hidden; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.1); 
-    max-width: 900px; 
-    width: 100%; 
+.login-box {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
 }
 
-.login-left { 
-    padding: 2.5rem; 
+.login-left {
+    padding: 2.5rem;
 }
 
-.login-right { 
-    background-color: #1a3a30; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+.login-right {
+    background-color: #1a3a30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     padding: 2rem;
-    background-image: url('../images/image-1754863136624.png'); /* خلفية صفحة تسجيل الدخول */
+    background-image: url('../images/image-1754863136624.png');
+    /* خلفية صفحة تسجيل الدخول */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -39,9 +40,9 @@ body {
 .login-right::before {
     content: '';
     position: absolute;
-    top: 0; 
-    left: 0; 
-    right: 0; 
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
     background: rgba(26, 58, 48, 0.9);
 }
@@ -53,8 +54,8 @@ body {
     max-width: 80%;
 }
 
-.form-control { 
-    padding: 0.75rem; 
+.form-control {
+    padding: 0.75rem;
     border-radius: 0.5rem;
     border: 1px solid #e2e8f0;
 }
@@ -64,15 +65,15 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(26, 58, 48, 0.25);
 }
 
-.btn-primary { 
-    background-color: #1a3a30; 
+.btn-primary {
+    background-color: #1a3a30;
     border: none;
     padding: 0.75rem 1.5rem;
     font-weight: 500;
 }
 
-.btn-primary:hover { 
-    background-color: #0f2922; 
+.btn-primary:hover {
+    background-color: #0f2922;
 }
 
 .divider {
@@ -90,12 +91,12 @@ body {
     border-bottom: 1px solid #e5e7eb;
 }
 
-.divider:not(:empty)::before { 
-    margin-right: 1.5rem; 
+.divider:not(:empty)::before {
+    margin-right: 1.5rem;
 }
 
-.divider:not(:empty)::after { 
-    margin-left: 1.5rem; 
+.divider:not(:empty)::after {
+    margin-left: 1.5rem;
 }
 
 .login-right-content img {
@@ -105,19 +106,25 @@ body {
 body {
     overflow-x: hidden;
 }
+
 body,
 p,
 span,
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .login-left,
 .login-right,
 .login-right-content {
     cursor: default;
 }
+
 button,
 .btn,
 .btn-primary,
 a {
     cursor: pointer;
 }
-

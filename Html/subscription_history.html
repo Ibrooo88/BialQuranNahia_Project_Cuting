@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <title>منصتي - سجل الاشتراكات</title>
@@ -11,58 +12,62 @@
             padding: 0.5rem 0 !important;
             min-height: 60px;
         }
+
         .navbar-brand-img {
             height: 40px;
             width: auto;
         }
+
         body {
             padding-top: 70px;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="../images/logo.png" alt="شعار المنصة" class="navbar-brand-img">
-                <span>بالقرآن نحيا</span>
-            </a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="index.html">الرئيسية</a>
-                <a class="nav-link" href="student_dashboard.html">لوحة التحكم</a>
-                <a class="nav-link" href="profile.html">الملف الشخصي</a>
-                <a class="nav-link" href="contact.html">تواصل معنا</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="../images/logo.png" alt="شعار المنصة" class="navbar-brand-img">
+                    <span>بالقرآن نحيا</span>
+                </a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                    <a class="nav-link" href="student_dashboard.html">لوحة التحكم</a>
+                    <a class="nav-link" href="profile.html">الملف الشخصي</a>
+                    <a class="nav-link" href="contact.html">تواصل معنا</a>
+                </div>
             </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>📒 سجل الاشتراكات</h2>
+        <div class="bg-gray-50 rounded-lg p-6 overflow-x-auto">
+            <table id="subscriptions-table">
+                <thead>
+                    <tr>
+                        <th>رقم الاشتراك</th>
+                        <th>الخطة</th>
+                        <th>المبلغ</th>
+                        <th>الحالة</th>
+                        <th>تاريخ البداية</th>
+                        <th>تاريخ الانتهاء</th>
+                        <th>الإيصال</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
-    </nav>
-</header>
+    </main>
 
-<main>
-    <h2>📒 سجل الاشتراكات</h2>
-    <div class="bg-gray-50 rounded-lg p-6 overflow-x-auto">
-        <table id="subscriptions-table">
-            <thead>
-                <tr>
-                    <th>رقم الاشتراك</th>
-                    <th>الخطة</th>
-                    <th>المبلغ</th>
-                    <th>الحالة</th>
-                    <th>تاريخ البداية</th>
-                    <th>تاريخ الانتهاء</th>
-                    <th>الإيصال</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-</main>
-
-<footer>
-    جميع الحقوق محفوظة &copy; 2025
-</footer>
+    <footer>
+        جميع الحقوق محفوظة &copy; 2025
+    </footer>
 
 </body>
+
 </html>

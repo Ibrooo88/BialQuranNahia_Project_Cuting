@@ -19,12 +19,13 @@
 .result-item label {
     font-weight: bold;
 }
+
 .result-item,
 .result-item label {
     cursor: default;
 }
+
 .result-item button,
 .result-item a {
     cursor: pointer;
 }
-

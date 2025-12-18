@@ -1,25 +1,25 @@
-body { 
-    background-color: #f8f9fa; 
+body {
+    background-color: #f8f9fa;
 }
 
-.signup-container { 
-    min-height: 100vh; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.signup-box { 
-    background: #fff; 
-    border-radius: 10px; 
-    overflow: hidden; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.1); 
-    max-width: 900px; 
-    width: 100%; 
+.signup-box {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
 }
 
-.signup-left { 
-    padding: 40px; 
+.signup-left {
+    padding: 40px;
 }
 
 .signup-right {
@@ -32,8 +32,8 @@ body {
     padding: 40px;
 }
 
-.form-control { 
-    padding: 12px; 
+.form-control {
+    padding: 12px;
 }
 
 .btn-primary {
@@ -59,10 +59,19 @@ body {
     height: 20px;
     margin-right: 8px;
 }
+
 .btn,
 .btn-primary {
     cursor: pointer;
 }
-p, h1, h2, h3, h4, h5, h6, span {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
     cursor: default;
 }

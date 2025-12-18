@@ -1,39 +1,39 @@
-body { 
-    background: #a99d94; 
-    font-family: 'Tajawal', Arial, sans-serif; 
+body {
+    background: #a99d94;
+    font-family: 'Tajawal', Arial, sans-serif;
 }
 
 .center-box {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     padding: 48px 32px;
     max-width: 400px;
     margin: 120px auto 0 auto;
     text-align: center;
 }
 
-.timer { 
-    font-size: 1.7rem; 
-    color: #1a3a30; 
-    font-weight: bold; 
-    margin-top: 18px; 
+.timer {
+    font-size: 1.7rem;
+    color: #1a3a30;
+    font-weight: bold;
+    margin-top: 18px;
 }
 
-.btn-main { 
-    background: #1a3a30; 
-    color: #fff; 
-    border: none; 
-    border-radius: 8px; 
-    padding: 12px 40px; 
-    font-size: 18px; 
-    font-weight: bold; 
-    margin-top: 28px; 
+.btn-main {
+    background: #1a3a30;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 28px;
 }
 
-.btn-main:hover { 
-    background: #c9b67a; 
-    color: #1a3a30; 
+.btn-main:hover {
+    background: #c9b67a;
+    color: #1a3a30;
 }
 
 .hidden-block {
@@ -43,6 +43,7 @@ body {
 .hidden-block.show {
     display: block;
 }
+
 body,
 .center-box,
 .timer,
@@ -51,7 +52,7 @@ span,
 div {
     cursor: default;
 }
+
 .btn-main {
     cursor: pointer;
 }
-

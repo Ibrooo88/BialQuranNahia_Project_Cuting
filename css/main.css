@@ -54,7 +54,9 @@ body {
     transform: translateY(-2px);
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ddd;
@@ -63,7 +65,9 @@ input, select, textarea {
     font-size: 1rem;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(26, 58, 48, 0.2);
@@ -134,21 +138,48 @@ header {
     text-align: center;
 }
 
-.mt-1 { margin-top: 0.25rem; }
-.mt-2 { margin-top: 0.5rem; }
-.mt-4 { margin-top: 1rem; }
-.mt-6 { margin-top: 1.5rem; }
-.mt-8 { margin-top: 2rem; }
+.mt-1 {
+    margin-top: 0.25rem;
+}
 
-.p-4 { padding: 1rem; }
-.p-6 { padding: 1.5rem; }
+.mt-2 {
+    margin-top: 0.5rem;
+}
 
-.rounded-lg { border-radius: 0.5rem; }
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
 body,
 p,
 span,
 div,
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .card,
 .sidebar,
 .main-content,
@@ -156,6 +187,7 @@ header,
 section {
     cursor: default;
 }
+
 a,
 button,
 .btn,

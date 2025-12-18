@@ -61,7 +61,7 @@ body {
     font-size: 1.4rem;
 }
 
-.actions > div {
+.actions>div {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -89,9 +89,17 @@ iframe {
     border-radius: 10px;
 }
 
-h2, span, p, div , label ,iframe{
+h2,
+span,
+p,
+div,
+label,
+iframe {
     cursor: default;
 }
-a, button, .btn {
+
+a,
+button,
+.btn {
     cursor: pointer;
 }
