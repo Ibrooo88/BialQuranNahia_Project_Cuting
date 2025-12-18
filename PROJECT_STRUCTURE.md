@@ -52,7 +52,6 @@ Project_Cuting/
 │   ├── subscribe.css              # تنسيق صفحة الاشتراك
 │   ├── subscription_history.css   # تنسيق سجل الاشتراكات
 │   ├── terms.css                  # تنسيق الشروط والأحكام
-│   └── waiting_approval.css       # تنسيق صفحة انتظار الموافقة
 │
 ├── js/                            # ملفات JavaScript
 │   ├── appointments.js            # منطق المواعيد
@@ -71,7 +70,7 @@ Project_Cuting/
 │   ├── subscribe.js               # منطق الاشتراك
 │   ├── subscription_history.js    # منطق سجل الاشتراكات
 │   ├── terms.js                   # منطق الشروط والأحكام
-│   └── waiting_approval.js        # منطق انتظار الموافقة
+│  
 │
 ├── images/                        # الصور والموارد البصرية
 │   ├── logo.png                   # شعار المنصة
